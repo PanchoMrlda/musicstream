@@ -27,7 +27,7 @@ class Song extends Model
    */
   public function getImageUrl()
   {
-    return urldecode('images/' . $this->album->artist->name . '/' . $this->album->name . '.jpg');
+    return urldecode('images/covers/' . $this->album->name . '.jpg');
   }
 
   /**
