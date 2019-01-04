@@ -19,7 +19,6 @@ class CreateAlbumsTable extends Migration
             $table->string('genre');
             $table->integer('year');
             $table->mediumText('description');
-            $table->unsignedInteger('artist_id');
             $table->timestamps();
         });
     }
