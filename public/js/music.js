@@ -43,36 +43,7 @@ $(".favorite").click(function () {
 });
 
 $(".play").click(function () {
-  var audio;
-  var audioData = decodeURI($(".audio.active")[0].src).split("/");
-  var cover = audioData[5];
-  var artist = audioData[4];
-  var title = cleanSongName(audioData[5]);
-  var songData = artist + '/' + cover + '/' + title;
-  $(".play").toggleClass("active");
-  if ($(".play i").hasClass("fa-play")) {
-    $(".play i").removeClass("fa-play").addClass("fa-pause");
-  } else {
-    $(".play i").removeClass("fa-pause").addClass("fa-play");
-  }
-  if ($(".play").hasClass("active")) {
-    audio = $(".audio.active")[0];
-    audio.play();
-    audio.ontimeupdate = function () {
-      $(".length label")[0].innerHTML = convertTime(audio.currentTime.toFixed());
-      $(".length input")[0].value = (audio.currentTime/audio.duration * 100).toFixed();
-      $(".length output")[0].innerHTML = convertTime(audio.duration.toFixed());
-      if (audio.currentTime >= audio.duration - 1) {
-        updateSongs(songData);
-        // if (!isMobileDevice()) {
-          $('.jcarousel-next').click();
-        // }
-      }
-    };
-  } else {
-    audio = $(".audio.active")[0];
-    audio.pause();
-  }
+  playAudio();
 });
 
 $(".volume").click(function () {
@@ -186,24 +157,85 @@ function setTrack(next) {
   newTrack.className += " active";
   $(".song").html(getSongName());
   $(".artist").html(getArtistName());
-  if (musicPlaying) {
-    $(".play")[0].click();
+  if (musicPlaying || oldTrack.duration >= oldTrack.currentTime) {
+    playAudio();
   }
 }
 
 function updateSongs(songData) {
-  // var xmlhttp = new XMLHttpRequest();
-  // // var pattern = /_\w*_/;
-  // // song = cleanStringSymbols(song.replace("'", "_").replace(':', '_'));
-  // // if (pattern.test(song)) {
-  // //   song = song.replace(/_/g, '"');
-  // // }
-  // xmlhttp.onreadystatechange = function() {
-  //   if (this.readyState == 4 && this.status == 200) {
-  //   }
-  // };
-  // // xmlhttp.open('GET', '/controllers/songs_controller.php?song=' + song, true);
-  // xmlhttp.open('POST', '/songs', true);
-  // xmlhttp.send(songData);
-  $.post( '/songs', { songData: songData } );
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $.ajax({
+    url: '/songs',
+    type: 'POST',
+    data: {_token: CSRF_TOKEN, songData: songData},
+    dataType: 'JSON',
+    success: function (data) { 
+      console.log(data);
+    }
+  });
+}
+
+function postSongs() {
+  var audioData = decodeURI($(".audio.active")[0].src).split("/");
+  var artist = audioData[4];
+  var cover = audioData[5];
+  var title = cleanSongName(audioData[6]);
+  var songData = artist + '/' + cover + '/' + title;
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $.ajax({
+    url: '/songs',
+    type: 'POST',
+    data: {_token: CSRF_TOKEN, songData: songData},
+    dataType: 'JSON',
+    success: function (data) { 
+      console.log(data);
+    }
+  });
+}
+
+function playAudio() {
+  var audio;
+  var audioData = decodeURI($(".audio.active")[0].src).split("/");
+  var artist = audioData[4];
+  var cover = audioData[5];
+  var title = cleanSongName(audioData[6]);
+  var songData = artist + '/' + cover + '/' + title;
+  $(".play").toggleClass("active");
+  if ($(".play i").hasClass("fa-play")) {
+    $(".play i").removeClass("fa-play").addClass("fa-pause");
+  } else {
+    $(".play i").removeClass("fa-pause").addClass("fa-play");
+  }
+  if ($(".play").hasClass("active")) {
+    audio = $(".audio.active")[0];
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(_ => {
+        // Automatic playback started!
+        // Show playing UI.
+        audio.play();
+      })
+      .catch(error => {
+        // Auto-play was prevented
+        // Show paused UI.
+        console.log('Error when play event');
+      });
+    }
+    audio.ontimeupdate = function () {
+      $(".length label")[0].innerHTML = convertTime(audio.currentTime.toFixed());
+      $(".length input")[0].value = (audio.currentTime/audio.duration * 100).toFixed();
+      $(".length output")[0].innerHTML = convertTime(audio.duration.toFixed());
+      if (audio.currentTime >= audio.duration) {
+        updateSongs(songData);
+        $('.jcarousel').jcarousel('scroll', '+=1');
+        setTrack(true);
+        // if (!isMobileDevice()) {
+        //   $('.jcarousel-next').click();
+        // }
+      }
+    };
+  } else {
+    audio = $(".audio.active")[0];
+    audio.pause();
+  }
 }
