@@ -15,11 +15,24 @@ class Song extends Model
   }
 
   /**
+   * Get the artist associated with the song
+   */
+  public function artist()
+  {
+    return $this->belongsTo('App\Artist');
+  }
+
+  /**
    * Get the song's audio url
    */
   public function getAudioUrl()
   {
-    return ('audio/' . $this->album->artist->name . '/' . $this->album->name . '/' . $this->track . ' ' . $this->name . '.mp3');
+    if (count($this->album->artists) > 1) {
+      $artistName = "Various Artists";
+    } else {
+      $artistName = $this->artist->name;
+    }
+    return ('audio/' . $artistName . '/' . $this->album->name . '/' . $this->name . '.mp3');
   }
 
   /**
