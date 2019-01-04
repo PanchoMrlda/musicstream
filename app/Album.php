@@ -7,10 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Album extends Model
 {
   /**
-   * Get the artist associated with the album
+   * Get the artists associated with the album
    */
-  public function artist()
+  public function artists()
   {
-    return $this->belongsTo('App\Artist');
+    return $this->belongsToMany('App\Artist', 'album_artists');
+  }
+
+  /**
+   * Get the songs associated with the album
+   */
+  public function songs()
+  {
+    return $this->hasMany('App\Song');
   }
 }
