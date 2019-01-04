@@ -5,10 +5,9 @@
     $active = ' active';
   } else {
     $active = '';
-  }
-  
+  }  
   ?>
-  <audio class="audio{{$active}}" src="{{$song->getAudioUrl()}}" type="audio/mpeg"> 
+  <audio class="audio{{$active}}" artist="{{$song->artist->name}}" src="{{$song->getAudioUrl()}}" type="audio/mpeg"> 
     Your browser does not support the audio tag!
   </audio>
   @endforeach
