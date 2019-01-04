@@ -15,8 +15,10 @@
       <ul class="jcarousel-pagination"></ul>
       <div class="info">
         <div class="name">
-          <h3 class="song">{{$songs[0]->name}}</h3>
-          <p class="artist">{{$songs[0]->album->artist->name}}</p>
+          @if(count($songs) > 0)
+            <h3 class="song">{{$songs[0]->name}}</h3>
+            <p class="artist">{{$songs[0]->artist->name}}</p>
+          @endif
         </div>
       </div>
     </div>
