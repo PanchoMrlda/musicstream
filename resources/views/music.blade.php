@@ -35,7 +35,7 @@
         <a href="#" class="shuffle"><i class="fa fa-random"></i></a>
         <a href="#" class="replay"><i class="fa fa-refresh"></i></a>
         <!-- <a href="#" class="volume"><i class="fa fa-volume-up"></i></a> -->
-        <a href="#" class="favorite"><i class="fa fa-heart"></i></a>
+        <a href="#" class="favorite"><i class="fa fa-heart-o"></i></a>
       </div>
       @include('layouts.footer')
       <div class="volume-slider">
