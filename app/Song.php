@@ -36,5 +36,6 @@ class Song extends Model
   public function incPlays()
   {
     $this->plays = $this->plays + 1;
+    $this->save();
   }
 }
