@@ -38,17 +38,15 @@ class SongsController extends Controller
     $albumName = explode("/", $songData)[1];
     $artistName = explode("/", $songData)[0];
     $artist = Artist::where('name', '=', $artistName)->get()->first();
-    Album::join('album_artists', 'albums.id', '=', 'album_artists.album_id')
-         ->where([
-          ['name', '=', $albumName],
-          ['artist_id', '=', $artist->id]
-         ])
-         ->get()
-         ->first();
-    $album = Album::where([
-      ['name', '=', $albumName],
-      ['artist_id', '=', $artist->id]
-    ])->get()->first();
+    $album = Album::join('album_artists', 'albums.id', '=', 'album_artists.album_id')
+                  ->join('artists', 'album_artists.artist_id', '=', 'artists.id')
+                  ->where([
+                    ['albums.name', '=', $albumName],
+                    ['artists.id', '=', $artist->id]
+                  ])
+                  ->select('albums.*')
+                  ->get()
+                  ->first();
     $song = Song::where([
       ['name', '=', $songName],
       ['album_id', '=', $album->id]
