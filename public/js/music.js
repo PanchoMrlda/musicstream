@@ -106,11 +106,11 @@ function newpage(newLocation) {
 
 function getSongName() {
   var songRawName = decodeURI($('.audio.active')[0].src).split('/')[6];
-  return cleanSongName(songRawName);
+  return songRawName.replace('.mp3', '');
 }
 
 function getArtistName() {
-  return decodeURI($('.audio.active')[0].src).split('/')[4];
+  return $('.audio.active')[0].getAttribute('artist');
 }
 
 function cleanSongName(songName) {
@@ -157,7 +157,7 @@ function setTrack(next) {
   newTrack.className += " active";
   $(".song").html(getSongName());
   $(".artist").html(getArtistName());
-  if (musicPlaying || oldTrack.duration >= oldTrack.currentTime) {
+  if (musicPlaying || oldTrack.duration == oldTrack.currentTime) {
     playAudio();
   }
 }
@@ -177,9 +177,9 @@ function updateSongs(songData) {
 
 function postSongs() {
   var audioData = decodeURI($(".audio.active")[0].src).split("/");
-  var artist = audioData[4];
+  var artist = getArtistName();
   var cover = audioData[5];
-  var title = cleanSongName(audioData[6]);
+  var title = audioData[6].replace('.mp3', '');
   var songData = artist + '/' + cover + '/' + title;
   var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
   $.ajax({
@@ -196,9 +196,9 @@ function postSongs() {
 function playAudio() {
   var audio;
   var audioData = decodeURI($(".audio.active")[0].src).split("/");
-  var artist = audioData[4];
+  var artist = getArtistName();
   var cover = audioData[5];
-  var title = cleanSongName(audioData[6]);
+  var title = audioData[6].replace('.mp3', '');
   var songData = artist + '/' + cover + '/' + title;
   $(".play").toggleClass("active");
   if ($(".play i").hasClass("fa-play")) {
