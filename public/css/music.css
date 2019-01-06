@@ -50,7 +50,8 @@ div.menu a:nth-child(3) { background: #e74c3c; }
 div.side-menu {
 	width: 100%;
 	height: 100%;
-	position: absolute;
+  position: absolute;
+  left: 0;
 	background: #333;
 	z-index: 98;
 	margin-left: -310px;
@@ -105,12 +106,19 @@ div.side-menu li a i {
 	margin-right: 7px;
 }
 
+div.center {
+  /* min-height: 272px; */
+  /* position: relative;
+  left: 0; */
+}
+
 div.overlay-image {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	opacity: .6;
-	top: 0;
+  top: 0;
+  left: 0;
 	z-index: -2 !important;
 	-webkit-filter: blur(4px);
 	        filter: blur(4px);
@@ -147,6 +155,7 @@ div.overlay-image.avalanche.active {
 div.overlay {
 	position: absolute;
   top: 0;
+  left: 0;
   z-index: -1 !important;
   width: 100%;
 	height: 100%;
@@ -179,6 +188,7 @@ div.cover img {
 .jcarousel {
 		width: 310px;
     position: relative;
+    left: -15;
     overflow: hidden;
 }
 
@@ -203,7 +213,8 @@ div.cover img {
 
 div.info {
 	text-align: center;
-	color: #fff;
+  color: #fff;
+  /* min-height: 33px; */
 }
 
 div.info h3 {
@@ -236,7 +247,7 @@ div.action .play {
 
 div.options {
 	text-align: center;
-	margin: 25px 0 35px 0;
+	margin: -6px 0 22px 0;
 	display: block;
 }
 
@@ -306,22 +317,25 @@ div.volume-slider a.close {
 
 div.length {
 	width: 280px;
-	margin: 20px auto;
+	margin: 30px auto;
 	color: #999;
 	font-size: 10px;
 }
 
 div.length label, div.length output {
+  all: unset;
 	position: absolute;
 	margin-top: -5px;
 }
 
 div.length output {
-	margin-left: -26px;
+  margin-top: -22px;
+  margin-left: 240px;
 }
 
 div.length label {
-	margin-left: 15px;
+  margin-top: -20px;
+  margin-left: 15px;
 }
 
 div.length input[type="range"] {
@@ -331,7 +345,7 @@ div.length input[type="range"] {
 	background-color: #999;
 	height:2px;
 	border: none;
-	outline: 0;
+  outline: 0;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -396,18 +410,20 @@ div.length input[type="range"] {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+
 .btn {
+  all: unset;
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #fff;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: #286090;
+  border: 1px solid #286090;
   padding: 0.375rem 0.75rem;
   font-size: 0.9rem;
   line-height: 1.6;
