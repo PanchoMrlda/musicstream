@@ -18,7 +18,7 @@ class CreateSongsTable extends Migration
             $table->string('name');
             $table->integer('plays');
             $table->integer('track');
-            $table->mediumText('description');
+            $table->mediumText('description')->nullable();
             $table->unsignedInteger('album_id');
             $table->timestamps();
         });

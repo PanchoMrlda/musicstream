@@ -18,7 +18,7 @@ class CreateAlbumsTable extends Migration
             $table->string('name');
             $table->string('genre');
             $table->integer('year');
-            $table->mediumText('description');
+            $table->mediumText('description')->nullable();
             $table->timestamps();
         });
     }

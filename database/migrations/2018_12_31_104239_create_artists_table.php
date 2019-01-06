@@ -18,7 +18,7 @@ class CreateArtistsTable extends Migration
             $table->string('name');
             $table->string('origin');
             $table->integer('formed');
-            $table->mediumText('description');
+            $table->mediumText('description')->nullable();
             $table->timestamps();
         });
     }
