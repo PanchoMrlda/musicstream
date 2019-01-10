@@ -51,3 +51,11 @@ Route::get('/songs', 'SongsController@index');
 Route::get('/songs/{id}', 'SongsController@getSong');
 
 Route::post('/songs', 'SongsController@updateSong');
+
+Route::post('/songs/artist', 'SongsController@artistSongs');
+
+Route::post('/songs/album', 'SongsController@albumSongs');
+
+Route::post('/artists/name', 'ArtistsController@artistsNames');
+
+Route::post('/albums/name', 'AlbumsController@albumsNames');
