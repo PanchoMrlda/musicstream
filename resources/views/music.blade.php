@@ -3,6 +3,7 @@
 @section('content')
   <div class="container">
     @include('layouts.sideMenu')
+    @include('layouts.searchMenu')
     <div class="center">
       @include('layouts.navbar')
       <div class="cover">
@@ -18,6 +19,9 @@
           @if(count($songs) > 0)
             <h3 class="song">{{$songs[0]->name}}</h3>
             <p class="artist">{{$songs[0]->artist->name}}</p>
+          @else
+            <h3 class="song"></h3>
+            <p class="artist"></p>
           @endif
         </div>
       </div>
@@ -56,26 +60,7 @@
     @endif
     <div class="overlay"></div>
   </div>
-  @include('layouts.songs')
-@endsection
-
-<!-- Modal -->
-<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center">Search for an artist</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Yolo
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Search</button>
-      </div>
-    </div>
+  <div class="song-list">
+    @include('layouts.songs')
   </div>
-</div>
+@endsection
