@@ -1,25 +1,3 @@
-$(function () {
-  $('.jcarousel').jcarousel({
-    wrap: 'circular'
-  });
-
-  $('.jcarousel-pagination').jcarouselPagination({
-    item: function (page) {
-      return '<li id="jcarousel-item' + page + '"><a href="#' + page + '">' + page + '</a></li>';
-    }
-  });
-
-  $('#jcarousel-item1').addClass('active');
-
-  $('.jcarousel-pagination')
-    .on('jcarouselpagination:active', 'li', function () {
-      $(this).addClass('active');
-    })
-    .on('jcarouselpagination:inactive', 'li', function () {
-      $(this).removeClass('active');
-    });
-});
-
 $('.jcarousel-prev').click(function () {
   $('.jcarousel').jcarousel('scroll', '-=1');
   setTrack(this.className.includes("next"));
@@ -60,7 +38,7 @@ $(".volume-slider .close").click(function () {
 })
 
 $(".side-menu-trigger").click(function () {
-  $(".side-menu").animate({
+  $(".side-menu:first").animate({
     marginLeft: '0px'
   });
   $(".volume-slider").animate({
@@ -68,12 +46,19 @@ $(".side-menu-trigger").click(function () {
   }, 500);
 });
 
-$(".side-menu li a, .side-menu .close").click(function () {
-  event.preventDefault();
+$(".side-menu li a, .side-menu .close, .side-menu .btn").click(function () {
   $(".side-menu").animate({
     marginLeft: '-310px'
   });
-  newpage(this.href);
+});
+
+$(".side-menu ul li:first").click(function () {
+  $(".side-menu:nth-child(2)").animate({
+    marginLeft: '0px'
+  });
+  $(".volume-slider").animate({
+    marginTop: '0px'
+  }, 500);
 });
 
 $('.volume-slider input[type="range"]').on('input', function () {
@@ -96,12 +81,6 @@ $('.volume-slider input[type="range"]').on('input', function () {
 function setVolume(myVolume) {
   var myMedia = document.getElementsByClassName('audio-avalanche');
   myMedia.volume = myVolume;
-}
-
-function newpage(newLocation) {
-  setTimeout(() => {
-    window.location = newLocation;
-  }, 500);
 }
 
 function getSongName() {
@@ -149,7 +128,8 @@ function setTrack(next) {
     newTrack = oldTrack.previousElementSibling;
     newTrackDefaultIndex = $(".audio").length - 1;
   }
-  if (newTrack.tagName != "AUDIO") {
+  // if (newTrack.tagName != "AUDIO") {
+  if (!newTrack) {
     newTrack = $(".audio")[newTrackDefaultIndex];
   }
   newTrack.currentTime = 0;
@@ -239,3 +219,129 @@ function playAudio() {
     audio.pause();
   }
 }
+
+function getSongs(artistName, mediaKind) {
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $.ajax({
+    url: '/songs/' + mediaKind,
+    type: 'POST',
+    data: {_token: CSRF_TOKEN, name: artistName},
+    dataType: 'JSON',
+    success: function (data) { 
+      console.log(data);
+      if (data.length !== 0) {
+        $('.jcarousel ul:first').html(data[0]);
+        $('.song-list:first').html(data[1]);
+        $(".song").html(getSongName());
+        $(".artist").html(getArtistName());
+        initCarousel();
+      }
+    }
+  });
+}
+
+function initCarousel() {
+  $(function () {
+    $('.jcarousel').jcarousel({
+      wrap: 'circular'
+    });
+  
+    $('.jcarousel-pagination').jcarouselPagination({
+      item: function (page) {
+        return '<li id="jcarousel-item' + page + '"><a href="#' + page + '">' + page + '</a></li>';
+      }
+    });
+  
+    $('#jcarousel-item1').addClass('active');
+  
+    $('.jcarousel-pagination')
+      .on('jcarouselpagination:active', 'li', function () {
+        $(this).addClass('active');
+      })
+      .on('jcarouselpagination:inactive', 'li', function () {
+        $(this).removeClass('active');
+      });
+  });
+}
+
+$('.search-menu-footer button:last').click(function () {
+  var artistName = $('#search-artist')[0].value;
+  var albumName = $('#search-album')[0].value;
+  if (artistName) {
+    getSongs(artistName, 'artist');
+  } else {
+    getSongs(albumName, 'album');
+  }
+});
+
+$( function() {
+  function log( message ) {
+    $("<div>").text(message).prependTo("#log");
+    $("#log").scrollTop(0);
+  }
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $("#search-album").autocomplete({
+    source: function(request, response) {
+      $.ajax( {
+        url: "/albums/name",
+        type: 'POST',
+        data: {_token: CSRF_TOKEN, albumNameIncomplete: request.term},
+        dataType: 'JSON',
+        success: function (data) { 
+          console.log(data);
+          response(data);
+        }
+      });
+    },
+    minLength: 2,
+    select: function(event, ui) {
+      log("Selected: " + ui.item.value + " aka " + ui.item.id);
+    }
+  });
+  $('.ui-front:first').css('z-index', 1040);
+});
+
+$( function() {
+  function log( message ) {
+    $("<div>").text(message).prependTo("#log");
+    $("#log").scrollTop(0);
+  }
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $("#search-artist").autocomplete({
+    source: function(request, response) {
+      $.ajax( {
+        url: "/artists/name",
+        type: 'POST',
+        data: {_token: CSRF_TOKEN, artistNameIncomplete: request.term},
+        dataType: 'JSON',
+        success: function (data) { 
+          console.log(data);
+          response(data);
+        }
+      });
+    },
+    minLength: 2,
+    select: function(event, ui) {
+      log("Selected: " + ui.item.value + " aka " + ui.item.id);
+    }
+  });
+  $('.ui-front:first').css('z-index', 1040);
+});
+
+function serverRequest(params, url) {
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  $.ajax({
+    url: url,
+    type: 'POST',
+    data: {_token: CSRF_TOKEN, artistName: params},
+    dataType: 'JSON',
+    success: function (data) { 
+      console.log(data);
+    }
+  });
+}
+
+$('.search-menu-body input').click(function(){
+  $('.ui-autocomplete-input:first').val('');
+  $('.ui-autocomplete-input:last').val('');
+});
