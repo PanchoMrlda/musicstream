@@ -32,7 +32,10 @@ class Song extends Model
     } else {
       $artistName = $this->artist->name;
     }
-    return ('audio/' . $artistName . '/' . $this->album->name . '/' . $this->name . '.mp3');
+    $artistName = str_replace("'", "&#39;", $artistName);
+    $albumName = str_replace("'", "&#39;", $this->album->name);
+    $songName = str_replace("'", "&#39;", $this->name);
+    return ('audio/' . $artistName . '/' . $albumName . '/' . $songName . '.mp3');
   }
 
   /**
