@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Album extends Model
 {
   /**
+   * The attributes that are mass assignable.
+   *
+   * @var array
+   */
+  protected $fillable = [
+      'name', 'genre', 'year', 'description'
+  ];
+
+  /**
    * Get the artists associated with the album
    */
   public function artists()
