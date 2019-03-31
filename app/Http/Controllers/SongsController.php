@@ -9,19 +9,6 @@ use App\Artist;
 
 class SongsController extends Controller
 {
-  // public function index()
-  // {
-  //   // $songs = Song::orderBy('plays', 'desc')->get();
-
-  //   // return view('topCharts')->with('songs', $songs);
-  //   return Song::all();
-  // }
-
-  // public function getSong($id)
-  // {
-  //   return Song::find($id);
-  // }
-
   public function examplePost(Request $request)
   {
     $response = array(
