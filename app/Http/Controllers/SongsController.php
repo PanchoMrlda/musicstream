@@ -9,18 +9,18 @@ use App\Artist;
 
 class SongsController extends Controller
 {
-  public function index()
-  {
-    // $songs = Song::orderBy('plays', 'desc')->get();
+  // public function index()
+  // {
+  //   // $songs = Song::orderBy('plays', 'desc')->get();
 
-    // return view('topCharts')->with('songs', $songs);
-    return Song::all();
-  }
+  //   // return view('topCharts')->with('songs', $songs);
+  //   return Song::all();
+  // }
 
-  public function getSong($id)
-  {
-    return Song::find($id);
-  }
+  // public function getSong($id)
+  // {
+  //   return Song::find($id);
+  // }
 
   public function examplePost(Request $request)
   {
@@ -33,6 +33,7 @@ class SongsController extends Controller
 
   public function updateSong(Request $request)
   {
+    return 1;
     $songData = $request->songData;
     $songName = explode("/", $songData)[2];
     $albumName = explode("/", $songData)[1];
@@ -103,5 +104,57 @@ class SongsController extends Controller
       $result = [];
     }
     return response()->json($result);
+  }
+
+  public function topCharts()
+  {
+    return Song::take(10)->sortBy('plays')->get();
+  }
+
+
+  /**
+   * GET /songs
+   */
+  public function index(Request $request)
+  {
+    return Song::all();
+  }
+
+  /**
+   * GET /songs/:id
+   */
+  public function show($id)
+  {
+    return Song::find($id);
+  }
+
+  /**
+   * POST /songs
+   */
+  public function store(Request $request)
+  {
+    $paramsToCreate = json_decode($request->getContent(), true);
+    $song = Song::create($paramsToCreate);
+    return $song;
+  }
+
+  /**
+   * PUT /songs/:id
+   */
+  public function update(Request $request, $id)
+  {
+    $song = Song::find($id);
+    $paramsToUpdate = json_decode($request->getContent(), true);
+    $song->update($paramsToUpdate);
+    return $song;
+  }
+
+  /**
+   * DELETE /songs/:id
+   */
+  public function destroy($id)
+  {
+    $song = Song::find($id);
+    $song->delete();
   }
 }
