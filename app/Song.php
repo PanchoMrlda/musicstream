@@ -7,6 +7,24 @@ use Illuminate\Database\Eloquent\Model;
 class Song extends Model
 {
   /**
+   * The attributes that are mass assignable.
+   *
+   * @var array
+   */
+  protected $fillable = [
+    'name', 'plays', 'track', 'description', 'album_id', 'artist_id'
+  ];
+
+  /**
+   * The attributes that are not shown.
+   *
+   * @var array
+   */
+  protected $hidden = [
+    'created_at', 'updated_at'
+  ];
+
+  /**
    * Get the album associated with the song
    */
   public function album()
