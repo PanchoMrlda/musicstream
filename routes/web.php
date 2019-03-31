@@ -44,18 +44,26 @@ Route::get('/', 'MusicController@index');
 
 // Route::get('/topCharts', 'MusicController@topCharts');
 
-Route::get('/topCharts', 'SongsController@index');
+// Route::get('/topCharts', 'SongsController@index');
 
-Route::get('/songs', 'SongsController@index');
+// Route::get('/songs', 'SongsController@index');
 
-Route::get('/songs/{id}', 'SongsController@getSong');
+// Route::get('/songs/{id}', 'SongsController@getSong');
 
-Route::post('/songs', 'SongsController@updateSong');
+// Route::post('/songs/played', 'SongsController@updateSong');
 
-Route::post('/songs/artist', 'SongsController@artistSongs');
+// Route::post('/songs/artist', 'SongsController@artistSongs');
 
-Route::post('/songs/album', 'SongsController@albumSongs');
+// Route::post('/songs/album', 'SongsController@albumSongs');
 
-Route::post('/artists/name', 'ArtistsController@artistsNames');
+// Route::post('/songs/topCharts', 'SongsController@topCharts');
 
-Route::post('/albums/name', 'AlbumsController@albumsNames');
+// Route::post('/artists/name', 'ArtistsController@artistsNames');
+
+// Route::post('/albums/name', 'AlbumsController@albumsNames');
+
+// Route::get('postman', 'SongsController@postman');
+
+Route::resource('artists', 'ArtistsController');
+Route::resource('albums', 'AlbumsController');
+Route::resource('songs', 'SongsController');
