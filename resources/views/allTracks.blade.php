@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+
+<!-- To get the source code upgrade to a Pro plan and Export code https://www.animaapp.com/pricing - Sample Exported Code: https://medium.com/sketch-app-sources/how-to-export-sketch-to-html-65c427b3aa3a -->
+
+
+<html>
+
 <head>
-  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" type=image/png href=https://animaproject.s3.amazonaws.com/home/favicon.png> <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <style>
     @font-face {
       font-family: "SFProDisplay-Regular";
@@ -13,7 +19,7 @@
       src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/fonts/SF-Pro-Display-Medium.otf') format("opentype");
     }
 
-    .alltracksscrollsearch {
+    .alltracks {
       width: 100%;
       min-width: 375px;
       height: 100vh;
@@ -46,7 +52,7 @@
       -webkit-text-size-adjust: none
     }
 
-    .alltracksscrollsearch .tabbar {
+    .alltracks .tabbar {
       background-color: rgba(255, 255, 255, 0.0);
       top: 727px;
       height: 85px;
@@ -59,7 +65,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .tabbarbg {
+    .alltracks .tabbar .tabbarbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 85px;
@@ -72,7 +78,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems {
+    .alltracks .tabbar .menuitems {
       background-color: rgba(255, 255, 255, 0.0);
       top: 12px;
       height: 41px;
@@ -85,7 +91,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .browse {
+    .alltracks .tabbar .menuitems .browse {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -98,7 +104,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .browse .browse1 {
+    .alltracks .tabbar .menuitems .browse .browse1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -114,10 +120,11 @@
       font-size: 12.0px;
       color: rgba(0, 0, 0, 1.0);
       text-align: left;
-      line-height: 14.0px
+      line-height: 14.0px;
+      white-space: nowrap;
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .browse .icon {
+    .alltracks .tabbar .menuitems .browse .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -130,7 +137,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .browse .icon .shape {
+    .alltracks .tabbar .menuitems .browse .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -144,7 +151,7 @@
       opacity: .25
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks {
+    .alltracks .tabbar .menuitems .alltracks1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 41px;
@@ -157,7 +164,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks .alltracks1 {
+    .alltracks .tabbar .menuitems .alltracks1 .alltracks2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 27px;
       height: auto;
@@ -175,7 +182,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks .icon {
+    .alltracks .tabbar .menuitems .alltracks1 .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -188,7 +195,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks .icon .shape {
+    .alltracks .tabbar .menuitems .alltracks1 .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 8px;
       height: 2px;
@@ -201,7 +208,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks .icon .shape1 {
+    .alltracks .tabbar .menuitems .alltracks1 .icon .shape1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 19px;
@@ -214,7 +221,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .alltracks .icon .shape2 {
+    .alltracks .tabbar .menuitems .alltracks1 .icon .shape2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 19px;
@@ -227,7 +234,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .playlists {
+    .alltracks .tabbar .menuitems .playlists {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -240,7 +247,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .playlists .playlists1 {
+    .alltracks .tabbar .menuitems .playlists .playlists1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -259,7 +266,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .playlists .icon {
+    .alltracks .tabbar .menuitems .playlists .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -272,7 +279,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .playlists .icon .shape {
+    .alltracks .tabbar .menuitems .playlists .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -286,7 +293,7 @@
       opacity: .25
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .search {
+    .alltracks .tabbar .menuitems .search {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -299,7 +306,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .search .search1 {
+    .alltracks .tabbar .menuitems .search .search1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -318,7 +325,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .search .icon {
+    .alltracks .tabbar .menuitems .search .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -331,7 +338,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .tabbar .menuitems .search .icon .shape {
+    .alltracks .tabbar .menuitems .search .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -345,7 +352,7 @@
       opacity: .25
     }
 
-    .alltracksscrollsearch .maincontent {
+    .alltracks .maincontent {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 727px;
@@ -359,7 +366,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .pagemask {
+    .alltracks .maincontent .pagemask {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 727px;
@@ -373,7 +380,7 @@
       opacity: .05
     }
 
-    .alltracksscrollsearch .maincontent .tracks {
+    .alltracks .maincontent .tracks {
       background-color: rgba(255, 255, 255, 0.0);
       top: 141px;
       height: 580px;
@@ -386,7 +393,104 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a1 {
+    .alltracks .maincontent .tracks .dividers {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 70px;
+      height: 440px;
+      width: 317px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4 {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 0;
+      height: 2px;
+      width: 317px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4copy {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 87px;
+      height: 3px;
+      width: 315px;
+      position: absolute;
+      margin: 0;
+      left: 1px;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4copy2 {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 175px;
+      height: 2px;
+      width: 317px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4copy3 {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 263px;
+      height: 2px;
+      width: 317px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4copy4 {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 350px;
+      height: 3px;
+      width: 315px;
+      position: absolute;
+      margin: 0;
+      left: 1px;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .dividers .line4copy5 {
+      background-color: rgba(255, 255, 255, 0.0);
+      top: 438px;
+      height: 2px;
+      width: 317px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      -ms-transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      opacity: .1
+    }
+
+    .alltracks .maincontent .tracks .a1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 54px;
@@ -399,7 +503,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a1 .hahayouu2019redead {
+    .alltracks .maincontent .tracks .a1 .acastlefullofras {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -417,7 +521,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a1 .greenday {
+    .alltracks .maincontent .tracks .a1 .deeppurple {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -435,7 +539,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a1 .a0532 {
+    .alltracks .maincontent .tracks .a1 .a0532 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -453,104 +557,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .dividers {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 70px;
-      height: 440px;
-      width: 317px;
-      position: absolute;
-      margin: 0;
-      left: 0;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0)
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4 {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 0;
-      height: 2px;
-      width: 317px;
-      position: absolute;
-      margin: 0;
-      left: 0;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4copy {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 87px;
-      height: 3px;
-      width: 315px;
-      position: absolute;
-      margin: 0;
-      left: 1px;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4copy2 {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 175px;
-      height: 2px;
-      width: 317px;
-      position: absolute;
-      margin: 0;
-      left: 0;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4copy3 {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 263px;
-      height: 2px;
-      width: 317px;
-      position: absolute;
-      margin: 0;
-      left: 0;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4copy4 {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 350px;
-      height: 3px;
-      width: 315px;
-      position: absolute;
-      margin: 0;
-      left: 1px;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .dividers .line4copy5 {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 438px;
-      height: 2px;
-      width: 317px;
-      position: absolute;
-      margin: 0;
-      left: 0;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      opacity: .1
-    }
-
-    .alltracksscrollsearch .maincontent .tracks .a2 {
+    .alltracks .maincontent .tracks .a2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 88px;
       height: 54px;
@@ -563,7 +570,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a2 .hailtotheking {
+    .alltracks .maincontent .tracks .a2 .achangeofseasons {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -581,7 +588,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a2 .avengedsevenfold {
+    .alltracks .maincontent .tracks .a2 .dreamtheater {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -599,7 +606,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a2 .a0452 {
+    .alltracks .maincontent .tracks .a2 .a0452 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -617,7 +624,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a3 {
+    .alltracks .maincontent .tracks .a3 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 175px;
       height: 54px;
@@ -630,7 +637,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a3 .haloonfire {
+    .alltracks .maincontent .tracks .a3 .adayinthelife {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -648,7 +655,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a3 .metallica {
+    .alltracks .maincontent .tracks .a3 .thebeatles {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -666,7 +673,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a3 .a0345 {
+    .alltracks .maincontent .tracks .a3 .a0345 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -684,7 +691,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a4 {
+    .alltracks .maincontent .tracks .a4 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 263px;
       height: 54px;
@@ -697,7 +704,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a4 .handofdoom {
+    .alltracks .maincontent .tracks .a4 .adoorintosummer {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -715,7 +722,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a4 .blacksabbath {
+    .alltracks .maincontent .tracks .a4 .joesatriani {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -733,7 +740,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a4 .a0548 {
+    .alltracks .maincontent .tracks .a4 .a0548 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -751,7 +758,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a5 {
+    .alltracks .maincontent .tracks .a5 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 351px;
       height: 54px;
@@ -764,7 +771,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a5 .harvesterofsorrow {
+    .alltracks .maincontent .tracks .a5 .agreatdayforfree {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -782,7 +789,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a5 .metallica {
+    .alltracks .maincontent .tracks .a5 .pinkfloyd {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -800,7 +807,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a5 .a0838 {
+    .alltracks .maincontent .tracks .a5 .a0838 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -818,7 +825,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a6 {
+    .alltracks .maincontent .tracks .a6 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 438px;
       height: 54px;
@@ -831,7 +838,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a6 .herghostinthefog {
+    .alltracks .maincontent .tracks .a6 .ahousedivided {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -849,7 +856,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a6 .cradleoffifth {
+    .alltracks .maincontent .tracks .a6 .megadeth {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -867,7 +874,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a6 .a0426 {
+    .alltracks .maincontent .tracks .a6 .a0426 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -885,7 +892,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a7 {
+    .alltracks .maincontent .tracks .a7 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 526px;
       height: 54px;
@@ -898,7 +905,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a7 .herecomestherain {
+    .alltracks .maincontent .tracks .a7 .alittlemore {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -916,7 +923,7 @@
       line-height: 23.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a7 .hipnogaja {
+    .alltracks .maincontent .tracks .a7 .skillet {
       background-color: rgba(255, 255, 255, 0.0);
       top: 36px;
       height: auto;
@@ -934,7 +941,7 @@
       line-height: 18.0px
     }
 
-    .alltracksscrollsearch .maincontent .tracks .a7 .a0352 {
+    .alltracks .maincontent .tracks .a7 .a0352 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 20px;
       height: auto;
@@ -952,7 +959,7 @@
       line-height: 14.0px
     }
 
-    .alltracksscrollsearch .maincontent .title {
+    .alltracks .maincontent .title {
       background-color: rgba(255, 255, 255, 0.0);
       top: 58px;
       height: 38px;
@@ -965,25 +972,25 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .title .alltracks {
+    .alltracks .maincontent .title .alltracks1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
       width: auto;
       position: absolute;
       margin: 0;
-      left: 0;
+      left: -1px;
       -ms-transform: rotate(0);
       -webkit-transform: rotate(0);
       transform: rotate(0);
       font-family: 'SFProDisplay-Medium', Helvetica, Arial, serif;
       font-size: 32.0px;
       color: rgba(51, 51, 51, 1.0);
-      text-align: left;
+      text-align: center;
       line-height: 38.0px
     }
 
-    .alltracksscrollsearch .maincontent .iconmenu {
+    .alltracks .maincontent .iconmenu {
       background-color: rgba(255, 255, 255, 0.0);
       top: 65px;
       height: 24px;
@@ -996,7 +1003,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .iconmenu .iconmenu1 {
+    .alltracks .maincontent .iconmenu .iconmenu1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 24px;
@@ -1009,7 +1016,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .profileimage {
+    .alltracks .maincontent .profileimage {
       background-color: rgba(255, 255, 255, 0.0);
       top: 61px;
       height: 35px;
@@ -1022,7 +1029,7 @@
       transform: rotate(0)
     }
 
-    .alltracksscrollsearch .maincontent .profileimage .profileimage1 {
+    .alltracks .maincontent .profileimage .profileimage1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 35px;
@@ -1033,46 +1040,6 @@
       -ms-transform: rotate(0);
       -webkit-transform: rotate(0);
       transform: rotate(0)
-    }
-
-    .alltracksscrollsearch .maincontent .alphabeticalorder {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 129px;
-      height: 576px;
-      width: 10px;
-      position: absolute;
-      margin: 0;
-      left: 357px;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0)
-    }
-
-    .alltracksscrollsearch .maincontent .alphabeticalorder .abcdefghij {
-      background-color: rgba(255, 255, 255, 0.0);
-      top: 0;
-      height: auto;
-      width: auto;
-      position: absolute;
-      margin: 0;
-      left: -1px;
-      -ms-transform: rotate(0);
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-      font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
-      font-size: 10.0px;
-      color: rgba(199, 199, 199, 1.0);
-      text-align: center;
-      line-height: 24.0px
-    }
-
-    .alltracksscrollsearch .maincontent .alphabeticalorder .abcdefghij .span2 {
-      color: rgba(51, 51, 51, 1.0)
-    }
-
-    .alltracksscrollsearch .maincontent .alphabeticalorder .abcdefghij .span4 {
-      font-family: 'SFProDisplay-Medium', Helvetica, Arial, serif;
-      color: rgba(40, 193, 181, 1.0)
     }
 
     .anima-animate-appear {
@@ -1140,160 +1107,77 @@
       }
     }
   </style>
-  <meta name="author" content="Launchpad by Anima">
+  <meta name=author content="Launchpad by Anima">
 </head>
 
 <body style="margin: 0;
- background: rgba(255, 255, 255, 1.0);" data-gr-c-s-loaded="true"><input type="hidden" id="anPageName" name="page" value="alltracksscrollsearch">
-  <div class="alltracksscrollsearch">
+ background: rgba(255, 255, 255, 1.0);"><input type=hidden id=anPageName name=page value=alltracks>
+  <div class=alltracks>
     <div style="width: 375px; height: 100%; position:relative; margin:auto;">
-      <div class="tabbar">
-        <div class="tabbarbg"></div>
-        <div class="menuitems">
-          <div class="browse">
-            <div class="browse1">Browse</div>
-            <div class="icon"><img class="shape" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png"></div>
-          </div>
-          <div class="alltracks">
-            <div class="alltracks1">All tracks</div>
-            <div class="icon"><img class="shape" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-1@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-1@2x.png"><img class="shape1" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-2@2x.png"><img class="shape2" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-3@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-3@2x.png"></div>
-          </div>
-          <div class="playlists">
-            <div class="playlists1">Playlists</div>
-            <div class="icon"><img class="shape" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-4@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-4@2x.png"></div>
-          </div>
-          <div class="search">
-            <div class="search1">Search</div>
-            <div class="icon"><img class="shape" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png"></div>
-          </div>
-        </div>
-      </div>
-      <div class="maincontent">
-        <div class="pagemask"></div>
-        <div class="tracks">
-          <div class="a1">
-            <div class="hahayouu2019redead">Ha Ha You’re Dead</div>
-            <div class="greenday">Green Day</div>
-            <div class="a0532">05:32</div>
-          </div>
-          <div class="dividers"><img class="line4" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy.png"><img class="line4copy2" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy3" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy4" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-4.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-4.png"><img class="line4copy5" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"></div>
-          <div class="a2">
-            <div class="hailtotheking">Hail to the King</div>
-            <div class="avengedsevenfold">Avenged Sevenfold </div>
-            <div class="a0452">04:52</div>
-          </div>
-          <div class="a3">
-            <div class="haloonfire">Halo on Fire</div>
-            <div class="metallica">Metallica</div>
-            <div class="a0345">03:45</div>
-          </div>
-          <div class="a4">
-            <div class="handofdoom">Hand of Doom</div>
-            <div class="blacksabbath">Black Sabbath</div>
-            <div class="a0548">05:48</div>
-          </div>
-          <div class="a5">
-            <div class="harvesterofsorrow">Harvester of Sorrow</div>
-            <div class="metallica">Metallica</div>
-            <div class="a0838">08:38</div>
-          </div>
-          <div class="a6">
-            <div class="herghostinthefog">Her Ghost in the Fog</div>
-            <div class="cradleoffifth">Cradle of Fifth</div>
-            <div class="a0426">04:26</div>
-          </div>
-          <div class="a7">
-            <div class="herecomestherain">Here Comes the Rain</div>
-            <div class="hipnogaja">Hipnogaja</div>
-            <div class="a0352">03:52</div>
-          </div>
-        </div>
-        <div class="title">
-          <div class="alltracks">All Tracks</div>
-        </div>
-        <div class="iconmenu"><img class="iconmenu1" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png"></div>
-        <div class="profileimage"><img class="profileimage1" src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-profile-image@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-profile-image@2x.png"></div>
-        <div class="alphabeticalorder">
-          <div class="abcdefghij"><span class="span1">A</span><span class="span2"><br></span><span class="span3">B<br>C<br>D<br>E<br>F<br>G<br></span><span class="span4">H</span><span class="span5"><br>I<br>J<br>K<br>L<br>M<br>N<br>O<br>P<br>Q<br>R<br>S<br>T<br>W<br>X<br>Y<br>Z</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    anima_isHidden = function(e) {
-      if (!(e instanceof HTMLElement)) return !1;
-      if (getComputedStyle(e).display == "none") return !0;
-      else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
-      return !1
-    };
-    anima_loadAsyncSrcForTag = function(tag) {
-      var elements = document.getElementsByTagName(tag);
-      var toLoad = [];
-      for (var i = 0; i < elements.length; i++) {
-        var e = elements[i];
-        var src = e.getAttribute("src");
-        var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
-        if (loaded) continue;
-        var asyncSrc = e.getAttribute("anima-src");
-        if (asyncSrc == undefined || asyncSrc.length == 0) continue;
-        if (anima_isHidden(e)) continue;
-        toLoad.push(e)
-      }
-      toLoad.sort(function(a, b) {
-        return anima_getTop(a) - anima_getTop(b)
-      });
-      for (var i = 0; i < toLoad.length; i++) {
-        var e = toLoad[i];
-        var asyncSrc = e.getAttribute("anima-src");
-        e.setAttribute("src", asyncSrc)
-      }
-    };
-    anima_pauseHiddenVideos = function(tag) {
-      var elements = document.getElementsByTagName("video");
-      for (var i = 0; i < elements.length; i++) {
-        var e = elements[i];
-        var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
-        var isHidden = anima_isHidden(e);
-        if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
-          e.play()
-        } else if (isPlaying && isHidden) {
-          e.pause()
-        }
-      }
-    };
-    anima_loadAsyncSrc = function(tag) {
-      anima_loadAsyncSrcForTag("img");
-      anima_loadAsyncSrcForTag("iframe");
-      anima_loadAsyncSrcForTag("video");
-      anima_pauseHiddenVideos()
-    };
-    var anima_getTop = function(e) {
-      var top = 0;
-      do {
-        top += e.offsetTop || 0;
-        e = e.offsetParent
-      } while (e);
-      return top
-    };
-    anima_loadAsyncSrc();
-    anima_old_onResize = window.onresize;
-    anima_new_onResize = undefined;
-    anima_updateOnResize = function() {
-      if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
-        anima_new_onResize = function(x) {
-          if (anima_old_onResize != undefined) anima_old_onResize(x);
-          anima_loadAsyncSrc()
-        }
-        window.onresize = anima_new_onResize;
-        setTimeout(function() {
-          anima_updateOnResize()
-        }, 3000)
-      }
-    };
-    anima_updateOnResize();
-    setTimeout(function() {
-      anima_loadAsyncSrc()
-    }, 200)
-  </script>
-  <script src="launchpad-js/launchpad-banner.js" async=""></script>
+      <div class=tabbar>
+        <div class=tabbarbg></div>
+        <div class=menuitems>
+          <div class=browse>
+            <a href="topHits">
+              <div class=browse1>Top Hits</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png> </div> </div> <div class=alltracks1>
+            </a>
+            <a href="allTracks">
+              <div class=alltracks2>All tracks</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-1@2x.png> <img class=shape1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-2@2x.png> <img class=shape2 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-3@2x.png> </div> </div> <div class=playlists>
+            </a>
+            <a href="playlists">
+              <div class=playlists1>Playlists</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-4@2x.png> </div> </div> <div class=search>
+            </a>
+            <div class=search1>Search</div>
+            <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png> </div> </div> </div> </div> <div class=maincontent>
+              <div class=pagemask></div>
+              <div class=tracks>
+                <div class=dividers><img class=line4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy.png> <img class=line4copy2 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy3 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-4.png> <img class=line4copy5 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> </div> <div class=a1>
+                  <div class=acastlefullofras>A Castle Full of Rascals</div>
+                  <div class=deeppurple>Deep Purple</div>
+                  <div class=a0532>05:32</div>
+                </div>
+                <div class=a2>
+                  <div class=achangeofseasons>A Change of Seasons</div>
+                  <div class=dreamtheater>Dream Theater</div>
+                  <div class=a0452>04:52</div>
+                </div>
+                <div class=a3>
+                  <div class=adayinthelife>A Day in the Life</div>
+                  <div class=thebeatles>The Beatles</div>
+                  <div class=a0345>03:45</div>
+                </div>
+                <div class=a4>
+                  <div class=adoorintosummer>A Door into Summer</div>
+                  <div class=joesatriani>Joe Satriani</div>
+                  <div class=a0548>05:48</div>
+                </div>
+                <div class=a5>
+                  <div class=agreatdayforfree>A Great Day for Freedom</div>
+                  <div class=pinkfloyd>Pink Floyd</div>
+                  <div class=a0838>08:38</div>
+                </div>
+                <div class=a6>
+                  <div class=ahousedivided>A House Divided</div>
+                  <div class=megadeth>Megadeth</div>
+                  <div class=a0426>04:26</div>
+                </div>
+                <div class=a7>
+                  <div class=alittlemore>A Little More</div>
+                  <div class=skillet>Skillet</div>
+                  <div class=a0352>03:52</div>
+                </div>
+              </div>
+              <div class=title>
+                <div class=alltracks1>All Tracks</div>
+              </div>
+              <div class=iconmenu><img class=iconmenu1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png> </div> <div class=profileimage><img class=profileimage1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-profile-image@2x.png> </div> </div> </div> </div> <script>anima_isHidden=function(e){if(!(e instanceof HTMLElement))return!1;if(getComputedStyle(e).display=="none")return!0;else if(e.parentNode&&anima_isHidden(e.parentNode))return!0;return!1};anima_loadAsyncSrcForTag=function(tag){var elements=document.getElementsByTagName(tag);var toLoad=[];for(var i=0;i<elements.length;i++){var e=elements[i];var src=e.getAttribute("src");var loaded=(src!=undefined&&src.length>0&&src!='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');if(loaded)continue;var asyncSrc=e.getAttribute("anima-src");if(asyncSrc==undefined||asyncSrc.length==0)continue;if(anima_isHidden(e))continue;toLoad.push(e)}
+                  toLoad.sort(function(a,b){return anima_getTop(a)-anima_getTop(b)});for(var i=0;i<toLoad.length;i++){var e=toLoad[i];var asyncSrc=e.getAttribute("anima-src");e.setAttribute("src",asyncSrc)}};anima_pauseHiddenVideos=function(tag){var elements=document.getElementsByTagName("video");for(var i=0;i<elements.length;i++){var e=elements[i];var isPlaying=!!(e.currentTime>0&&!e.paused&&!e.ended&&e.readyState>2);var isHidden=anima_isHidden(e);if(!isPlaying&&!isHidden&&e.getAttribute("autoplay")=="autoplay"){e.play()}
+                    else if(isPlaying&&isHidden){e.pause()}}};anima_loadAsyncSrc=function(tag){anima_loadAsyncSrcForTag("img");anima_loadAsyncSrcForTag("iframe");anima_loadAsyncSrcForTag("video");anima_pauseHiddenVideos()};var anima_getTop=function(e){var top=0;do{top+=e.offsetTop||0;e=e.offsetParent}while(e);return top};anima_loadAsyncSrc();anima_old_onResize=window.onresize;anima_new_onResize=undefined;anima_updateOnResize=function(){if(anima_new_onResize==undefined||window.onresize!=anima_new_onResize){anima_new_onResize=function(x){if(anima_old_onResize!=undefined)anima_old_onResize(x);anima_loadAsyncSrc()}
+                    window.onresize=anima_new_onResize;setTimeout(function(){anima_updateOnResize()},3000)}};anima_updateOnResize();setTimeout(function(){anima_loadAsyncSrc()},200)</script>
+                    <script src=js/launchpad-banner.js async></script>
 </body>
+
+</html>

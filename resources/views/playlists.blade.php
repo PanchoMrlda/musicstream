@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+
+<!-- To get the source code upgrade to a Pro plan and Export code https://www.animaapp.com/pricing - Sample Exported Code: https://medium.com/sketch-app-sources/how-to-export-sketch-to-html-65c427b3aa3a -->
+
+
+<html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" type=image/png href=https://animaproject.s3.amazonaws.com/home/favicon.png> <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <style>
     @font-face {
       font-family: "SFProDisplay-Regular";
@@ -62,7 +68,7 @@
     .playlist .tabbar .tabbarbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
-      height: 65px;
+      height: 85px;
       width: 375px;
       position: absolute;
       margin: 0;
@@ -114,7 +120,8 @@
       font-size: 12.0px;
       color: rgba(0, 0, 0, 1.0);
       text-align: left;
-      line-height: 14.0px
+      line-height: 14.0px;
+      white-space: nowrap;
     }
 
     .playlist .tabbar .menuitems .browse .icon {
@@ -1183,163 +1190,74 @@
       }
     }
   </style>
-  <meta name="author" content="Launchpad by Anima">
+  <meta name=author content="Launchpad by Anima">
 </head>
 
 <body style="margin: 0;
- background: rgba(255, 255, 255, 1.0);"><input type="hidden" id="anPageName" name="page" value="playlist">
-  <div class="playlist">
+ background: rgba(255, 255, 255, 1.0);"><input type=hidden id=anPageName name=page value=playlist>
+  <div class=playlist>
     <div style="width: 375px; height: 100%; position:relative; margin:auto;">
-      <div class="tabbar">
-        <div class="tabbarbg"></div>
-        <div class="menuitems">
-          <div class="browse">
-            <div class="browse1">Browse</div>
-            <div class="icon"><img class="shape" src="images/all-tracks-shape@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png"></div>
-          </div>
-          <div class="alltracks">
-            <div class="alltracks1">All tracks</div>
-            <div class="icon"><img class="shape" src="images/now-playing-shape-1@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-1@2x.png"><img class="shape1" src="images/now-playing-shape-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-2@2x.png"><img class="shape2" src="images/now-playing-shape-3@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-3@2x.png"></div>
-          </div>
-          <div class="playlists">
-            <div class="playlists1">Playlists</div>
-            <div class="icon"><img class="shape" src="images/now-playing-shape-4@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-4@2x.png"></div>
-          </div>
-          <div class="search">
-            <div class="search1">Search</div>
-            <div class="icon"><img class="shape" src="images/all-tracks-shape-5@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png"></div>
-          </div>
-        </div>
-      </div>
-      <div class="maincontent">
-        <div class="pagemask"></div>
-        <div class="songs">
-          <div class="a1playing">
-            <div class="inismona">Inis Mona</div>
-            <div class="eluveitie">Eluveitie</div>
-            <div class="pause"><img class="oval" src="images/playlist-oval@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval@2x.png">
-              <div class="icon"><img class="line" src="images/playlist-line-copy@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-line-copy@2x.png"><img class="linecopy" src="images/playlist-line-copy@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-line-copy@2x.png"></div>
+      <div class=tabbar>
+        <div class=tabbarbg></div>
+        <div class=menuitems>
+          <div class=browse>
+            <a href="topHits">
+              <div class=browse1>Top Hits</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png> </div> </div> <div class=alltracks>
+            </a>
+            <a href="allTracks">
+              <div class=alltracks1>All tracks</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-1@2x.png> <img class=shape1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-2@2x.png> <img class=shape2 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-3@2x.png> </div> </div> <div class=playlists>
+            </a>
+            <a href="playlists">
+              <div class=playlists1>Playlists</div>
+              <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-4@2x.png> </div> </div> <div class=search>
+            </a>
+            <div class=search1>Search</div>
+            <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png> </div> </div> </div> </div> <div class=maincontent>
+              <div class=pagemask></div>
+              <div class=songs>
+                <div class=a1playing>
+                  <div class=inismona>Inis Mona</div>
+                  <div class=eluveitie>Eluveitie</div>
+                  <div class=pause><img class=oval src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval@2x.png> <div class=icon><img class=line src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-line-copy@2x.png> <img class=linecopy src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-line-copy@2x.png> </div> </div> </div> <div class=a2>
+                    <div class=hallowedbethyname>Hallowed be thy name</div>
+                    <div class=ironmaiden>Iron Maiden</div>
+                  </div>
+                  <div class=a3>
+                    <div class=tillwedie>Till we die</div>
+                    <div class=slipknot>Slipknot</div>
+                  </div>
+                  <div class=a4>
+                    <div class=fadetoblack>Fade to black</div>
+                    <div class=metallica>Metallica</div>
+                  </div>
+                  <div class=a5>
+                    <div class=paradisecity>Paradise City</div>
+                    <div class=gunsnroses>Guns n Roses</div>
+                  </div>
+                  <div class=a6>
+                    <div class=herecomestherain>Here Comes the Rain</div>
+                    <div class=hypnogaja>Hypnogaja</div>
+                  </div>
+                  <div class=dividers><img class=line4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy.png> <img class=line4copy2 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy3 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> <img class=line4copy4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-4.png> <img class=line4copy5 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> </div> </div> <div class=lists>
+                    <div class=fav><img class=oval6 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6@2x.png> <div class=fav1>Fav</div>
+                  </div>
+                  <div class=rock><img class=oval6 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png> <div class=rock1>Rock</div>
+                </div>
+                <div class=folk><img class=oval6 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png> <div class=folk1>Folk</div>
+              </div>
+              <div class=pop><img class=oval6 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png> <div class=pop1>Pop</div>
             </div>
           </div>
-          <div class="a2">
-            <div class="hallowedbethyname">Hallowed be thy name</div>
-            <div class="ironmaiden">Iron Maiden</div>
+          <div class=title>
+            <div class=playlist1>Playlist</div>
           </div>
-          <div class="a3">
-            <div class="tillwedie">Till we die</div>
-            <div class="slipknot">Slipknot</div>
-          </div>
-          <div class="a4">
-            <div class="fadetoblack">Fade to black</div>
-            <div class="metallica">Metallica</div>
-          </div>
-          <div class="a5">
-            <div class="paradisecity">Paradise City</div>
-            <div class="gunsnroses">Guns n Roses</div>
-          </div>
-          <div class="a6">
-            <div class="herecomestherain">Here Comes the Rain</div>
-            <div class="hypnogaja">Hypnogaja</div>
-          </div>
-          <div class="dividers"><img class="line4" src="images/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy" src="images/all-tracks-line-4-copy.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy.png"><img class="line4copy2" src="images/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy3" src="images/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"><img class="line4copy4" src="images/all-tracks-line-4-copy-4.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-4.png"><img class="line4copy5" src="images/all-tracks-line-4-copy-5.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png"></div>
-        </div>
-        <div class="lists">
-          <div class="fav"><img class="oval6" src="images/playlist-oval-6@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6@2x.png">
-            <div class="fav1">Fav</div>
-          </div>
-          <div class="rock"><img class="oval6" src="images/playlist-oval-6-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png">
-            <div class="rock1">Rock</div>
-          </div>
-          <div class="folk"><img class="oval6" src="images/playlist-oval-6-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png">
-            <div class="folk1">Folk</div>
-          </div>
-          <div class="pop"><img class="oval6" src="images/playlist-oval-6-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval-6-2@2x.png">
-            <div class="pop1">Pop</div>
-          </div>
-        </div>
-        <div class="title">
-          <div class="playlist1">Playlist</div>
-        </div>
-        <div class="profileimage"><img class="profileimage1" src="images/now-playing-profile-image@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-profile-image@2x.png"></div>
-        <div class="iconmenu"><img class="iconmenu1" src="images/playlist-iconmenu@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png"></div>
-      </div>
-    </div>
-  </div>
-  <!-- <script>
-    anima_isHidden = function(e) {
-      if (!(e instanceof HTMLElement)) return !1;
-      if (getComputedStyle(e).display == "none") return !0;
-      else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
-      return !1
-    };
-    anima_loadAsyncSrcForTag = function(tag) {
-      var elements = document.getElementsByTagName(tag);
-      var toLoad = [];
-      for (var i = 0; i < elements.length; i++) {
-        var e = elements[i];
-        var src = e.getAttribute("src");
-        var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
-        if (loaded) continue;
-        var asyncSrc = e.getAttribute("anima-src");
-        if (asyncSrc == undefined || asyncSrc.length == 0) continue;
-        if (anima_isHidden(e)) continue;
-        toLoad.push(e)
-      }
-      toLoad.sort(function(a, b) {
-        return anima_getTop(a) - anima_getTop(b)
-      });
-      for (var i = 0; i < toLoad.length; i++) {
-        var e = toLoad[i];
-        var asyncSrc = e.getAttribute("anima-src");
-        e.setAttribute("src", asyncSrc)
-      }
-    };
-    anima_pauseHiddenVideos = function(tag) {
-      var elements = document.getElementsByTagName("video");
-      for (var i = 0; i < elements.length; i++) {
-        var e = elements[i];
-        var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
-        var isHidden = anima_isHidden(e);
-        if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
-          e.play()
-        } else if (isPlaying && isHidden) {
-          e.pause()
-        }
-      }
-    };
-    anima_loadAsyncSrc = function(tag) {
-      anima_loadAsyncSrcForTag("img");
-      anima_loadAsyncSrcForTag("iframe");
-      anima_loadAsyncSrcForTag("video");
-      anima_pauseHiddenVideos()
-    };
-    var anima_getTop = function(e) {
-      var top = 0;
-      do {
-        top += e.offsetTop || 0;
-        e = e.offsetParent
-      } while (e);
-      return top
-    };
-    anima_loadAsyncSrc();
-    anima_old_onResize = window.onresize;
-    anima_new_onResize = undefined;
-    anima_updateOnResize = function() {
-      if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
-        anima_new_onResize = function(x) {
-          if (anima_old_onResize != undefined) anima_old_onResize(x);
-          anima_loadAsyncSrc()
-        }
-        window.onresize = anima_new_onResize;
-        setTimeout(function() {
-          anima_updateOnResize()
-        }, 3000)
-      }
-    };
-    anima_updateOnResize();
-    setTimeout(function() {
-      anima_loadAsyncSrc()
-    }, 200)
-  </script>
-  <script src="js/launchpad-banner.js" async=""></script> -->
+          <div class=profileimage><img class=profileimage1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-profile-image@2x.png> </div> <div class=iconmenu><img class=iconmenu1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png> </div> </div> </div> </div> <script>anima_isHidden=function(e){if(!(e instanceof HTMLElement))return!1;if(getComputedStyle(e).display=="none")return!0;else if(e.parentNode&&anima_isHidden(e.parentNode))return!0;return!1};anima_loadAsyncSrcForTag=function(tag){var elements=document.getElementsByTagName(tag);var toLoad=[];for(var i=0;i<elements.length;i++){var e=elements[i];var src=e.getAttribute("src");var loaded=(src!=undefined&&src.length>0&&src!='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');if(loaded)continue;var asyncSrc=e.getAttribute("anima-src");if(asyncSrc==undefined||asyncSrc.length==0)continue;if(anima_isHidden(e))continue;toLoad.push(e)}
+              toLoad.sort(function(a,b){return anima_getTop(a)-anima_getTop(b)});for(var i=0;i<toLoad.length;i++){var e=toLoad[i];var asyncSrc=e.getAttribute("anima-src");e.setAttribute("src",asyncSrc)}};anima_pauseHiddenVideos=function(tag){var elements=document.getElementsByTagName("video");for(var i=0;i<elements.length;i++){var e=elements[i];var isPlaying=!!(e.currentTime>0&&!e.paused&&!e.ended&&e.readyState>2);var isHidden=anima_isHidden(e);if(!isPlaying&&!isHidden&&e.getAttribute("autoplay")=="autoplay"){e.play()}
+                else if(isPlaying&&isHidden){e.pause()}}};anima_loadAsyncSrc=function(tag){anima_loadAsyncSrcForTag("img");anima_loadAsyncSrcForTag("iframe");anima_loadAsyncSrcForTag("video");anima_pauseHiddenVideos()};var anima_getTop=function(e){var top=0;do{top+=e.offsetTop||0;e=e.offsetParent}while(e);return top};anima_loadAsyncSrc();anima_old_onResize=window.onresize;anima_new_onResize=undefined;anima_updateOnResize=function(){if(anima_new_onResize==undefined||window.onresize!=anima_new_onResize){anima_new_onResize=function(x){if(anima_old_onResize!=undefined)anima_old_onResize(x);anima_loadAsyncSrc()}
+                window.onresize=anima_new_onResize;setTimeout(function(){anima_updateOnResize()},3000)}};anima_updateOnResize();setTimeout(function(){anima_loadAsyncSrc()},200)</script>
+                <script src=launchpad-js/launchpad-banner.js async></script>
 </body>
+
+</html>
