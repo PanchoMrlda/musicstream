@@ -218,17 +218,12 @@
   text-align: center;
 }
 
-.main-nav {
-  width: 100%;
+.main .main-nav {
+  margin-left: 30px;
+  margin-right: 30px;
   height: 100px;
-  background-color: turquoise;
   display: flex;
-  align-items: center;
   overflow: auto;
-  white-space: nowrap;
-  /* para esconder la barra de scroll 
-Es posible que con el ratón no te funcione, pero en mobile hace scroll sin problema
-*/
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
@@ -237,16 +232,21 @@ Es posible que con el ratón no te funcione, pero en mobile hace scroll sin prob
   display: none;
 }
 
-.main-nav__item {
-  display: inline-flex;
-  padding: 30px;
+.main .main-nav .main-nav__item {
   border-radius: 100%;
-  background-color: black;
-  border: 1px solid white;
-  margin-left: 10px;
-}
-
-.main-nav__item:first-child {
-  margin-left: 0;
-  background-color: red;
+  /* This config should be for the selected list */
+  /* background-color: rgba(40, 193, 181, 1); */
+  /* color: rgba(255, 255, 255, 1.0); */
+  background-color: rgba(40, 193, 181, 0.25);
+  color: rgba(40, 193, 181, 1);
+  font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
+  font-size: 20.0px;
+  text-align: center;
+  max-height: 85px;
+  max-width: 85px;
+  min-height: 85px;
+  min-width: 85px;
+  margin-right: 15px;
+  line-height: 82px;
+  overflow: hidden;
 }
