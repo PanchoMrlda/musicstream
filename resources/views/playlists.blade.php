@@ -63,22 +63,19 @@
             <img class="pause-icon" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cc1b5f9dc4425000aa8c472/img/playlist-combined-shape-1@2x.png>
           </div>
         </div>
-            @if(count($songs)> 0)
-            @foreach($songs as $index => $song)
-            <div class="songcontainer" onclick="playAudio" src="{{$song->getAudioUrl()}}" style="top: {{($index + 1) * 88}}px;">
-              <div class="songname">{{$song->name}}</div>
-              <div class="songartistname">{{$song->artist->name}}</div>
-            </div>
-            @endforeach
-            @endif
-            <div class=dividers>
-              @if(count($songs)> 0)
-              @foreach($songs as $index => $song)
-              <img class=divider style="top: {{($index + 1) * 88}}px;" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png>
-              @endforeach
-              @endif
-            </div>
-          <!-- </div> -->
+        <div class="songs">
+          @if(count($songs)> 0)
+          @foreach($songs as $song)
+          <div class="song-container" onclick="playAudio" src="{{$song->getAudioUrl()}}">
+            <img class=divider src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png>
+            <br>
+            <span class="name">{{$song->name}}</span>
+            <br>
+            <span class="artist">{{$song->artist->name}}</span>
+          </div>
+          @endforeach
+          @endif
+        </div>
         </div>
       </section>
     </main>
