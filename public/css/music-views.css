@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/fonts/SF-Pro-Display-Medium.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb711d1c5322c00090d23c9/fonts/SF-Pro-Display-Regular.otf') format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  min-width: 320px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  min-width: 320px;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .icon-menu-container {
+  background-color: rgba(255, 255, 255, 0.0);
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header .icon-menu-container .icon-menu {
+  background-color: rgba(255, 255, 255, 0.0);
+  height: 25px;
+  width: 25px;
+}
+
+.header .title-container {
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header .title-container .title {
+  background-color: rgba(255, 255, 255, 0.0);
+  font-family: 'SFProDisplay-Medium', Helvetica, Arial, serif;
+  font-size: 28px;
+  color: rgba(51, 51, 51, 1.0);
+  text-align: center;
+  line-height: 30px;
+}
+
+.header .profile-image-container {
+  background-color: rgba(255, 255, 255, 0.0);
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header .profile-image-container .helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50%;
+}
+
+.header .profile-image-container .profile-image {
+  background-color: rgba(255, 255, 255, 0.0);
+  height: 35px;
+  width: 35px;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+  background-color: white;
+  margin-top: 75px;
+  padding-bottom: 70px;
+}
+
+.main .content .playing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .content .playing .info {
+  margin-left: 30px;
+}
+
+.main .content .playing .info .song {
+  background-color: rgba(255, 255, 255, 0.0);
+  font-family: 'SFProDisplay-Medium', Helvetica, Arial, serif;
+  font-size: 19.0px;
+  color: rgba(40, 193, 181, 1.0);
+  text-align: left;
+  line-height: 23.0px;
+}
+
+.main .content .playing .info .artist {
+  background-color: rgba(255, 255, 255, 0.0);
+  font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(40, 193, 181, 1.0);
+  text-align: left;
+  line-height: 18.0px;
+}
+
+.main .content .playing .button {
+  margin-right: 30px;
+  background-color: rgba(255, 255, 255, 0.0);
+  height: 35px;
+  width: 35px;
+}
+
+.main .content .playing .button .oval {
+  background-color: rgba(255, 255, 255, 0.0);
+  height: 35px;
+  width: 35px;
+}
+
+.main .content .playing .button .pause-icon {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: -30px;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left: 12px;
+}
+
+.footer {
+  min-width: 320px;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  position: fixed;
+  bottom: 0;
+}
+
+.main-nav {
+  width: 100%;
+  height: 100px;
+  background-color: turquoise;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+  /* para esconder la barra de scroll 
+Es posible que con el ratón no te funcione, pero en mobile hace scroll sin problema
+*/
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.main-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main-nav__item {
+  display: inline-flex;
+  padding: 30px;
+  border-radius: 100%;
+  background-color: black;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+.main-nav__item:first-child {
+  margin-left: 0;
+  background-color: red;
+}
