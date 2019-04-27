@@ -78,7 +78,7 @@
       </div>
       <span class="icon-caption">Top Hits</span>
     </a>
-    <a class="anchor" href="allTracks">
+    <a class="anchor" onclick="footerGoTo('allTracks')">
       <div class="icon">
         <img class="shape" src="images/all-tracks.png">
       </div>
