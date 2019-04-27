@@ -34,3 +34,11 @@ audio.addEventListener('play', function () {
     document.getElementsByClassName('far pause')[0].style.display = 'block';
   }
 });
+
+function footerGoTo(url) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( 'GET', url, false ); // false for synchronous request
+  xmlHttp.send( null );
+  var result = xmlHttp.responseText;
+  document.getElementsByTagName('html')[0].innerHTML = result;
+}
