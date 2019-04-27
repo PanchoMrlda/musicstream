@@ -7,8 +7,8 @@
   <title>Musically - Playlists</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
-  <script src="main.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 
 <body class="body">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <figure class="profile-image-container">
-      <img class="profile-image" src=images/Pancho1.1.jpg>
+      <img class="profile-image" src=images/pancho.jpg>
     </figure>
   </header>
   <main class="main">
@@ -46,11 +46,11 @@
     <section class="content">
       <div class="playing">
         <div class="info">
-          <span class="song">Inis Mona</span>
+          <span class="song"></span>
           <br>
-          <span class="artist">Eluveitie</span>
+          <span class="artist"></span>
         </div>
-        <div class="button">
+        <div class="button">        
           <span class="far play">&#xf144;</span>
           <span class="far pause" style="display:none">&#xf28b;</span>
         </div>
@@ -58,7 +58,7 @@
       <div class="songs">
         @if(count($songs)> 0)
         @foreach($songs as $song)
-        <div class="song-container" onclick="playAudio" src="{{$song->getAudioUrl()}}">
+        <div class="song-container" onclick="playAudio(this)" src="{{$song->getAudioUrl()}}" data-song="{{$song->name}}" data-artist="{{$song->artist->name}}">
           <img class=divider src="images/song-divider.png">
           <br>
           <span class="name">{{$song->name}}</span>
@@ -97,6 +97,7 @@
       <span class="icon-caption">Search</span>
     </a>
   </footer>
+  <script src="js/music-views.js" defer="true"></script>
 </body>
 
 </html>
