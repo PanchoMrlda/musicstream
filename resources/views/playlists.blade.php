@@ -14,7 +14,7 @@
 <body class="body">
   <header class="header">
     <div class="icon-menu-container">
-      <img class="icon-menu" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png>
+      <img class="icon-menu" src=images/icon-menu.png>
     </div>
     <div class="title-container">
       <div class="title">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <figure class="profile-image-container">
-      <img class="profile-image" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-profile-image@2x.png>
+      <img class="profile-image" src=images/Pancho1.1.jpg>
     </figure>
   </header>
   <main class="main">
@@ -59,7 +59,7 @@
         @if(count($songs)> 0)
         @foreach($songs as $song)
         <div class="song-container" onclick="playAudio" src="{{$song->getAudioUrl()}}">
-          <img class=divider src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png>
+          <img class=divider src="images/song-divider.png">
           <br>
           <span class="name">{{$song->name}}</span>
           <br>
@@ -74,25 +74,25 @@
   <footer class="footer">
     <a class="anchor" href="topHits">
     <div class="icon">
-        <img class="shape" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape@2x.png>
+        <img class="shape" src="images/top-hits.png">
       </div>
       <span class="icon-caption">Top Hits</span>
     </a>
     <a class="anchor" href="allTracks">
       <div class="icon">
-        <img class="shape" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cc1b5f9dc4425000aa8c472/img/playlist-combined-shape@2x.png>
+        <img class="shape" src="images/all-tracks.png">
       </div>
       <span class="icon-caption">All tracks</span>
     </a>
     <a class="anchor" href="playlists">
       <div class="icon">
-        <img class="shape" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-4@2x.png>
+        <img class="shape" src="images/playlists-white.png">
       </div>
       <span class="icon-caption">Playlists</span>
     </a>
     <a class="anchor" href="#">
       <div class="icon">
-        <img class="shape" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png>
+        <img class="shape" src="images/search.png">
       </div>
       <span class="icon-caption">Search</span>
     </a>
