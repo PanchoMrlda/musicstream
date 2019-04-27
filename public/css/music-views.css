@@ -71,16 +71,11 @@
   justify-content: center;
 }
 
-.header .profile-image-container .helper {
-  display: inline-block;
-  vertical-align: middle;
-  height: 50%;
-}
-
 .header .profile-image-container .profile-image {
   background-color: rgba(255, 255, 255, 0.0);
   height: 35px;
   width: 35px;
+  border-radius: 100%;
 }
 
 .main {
