@@ -60,8 +60,8 @@
             <span class="artist">Eluveitie</span>
           </div>
           <div class="button">
-            <img class="oval" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval@2x.png>
-            <img class="pause-icon" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cc1b5f9dc4425000aa8c472/img/playlist-combined-shape-1@2x.png>
+            <span class="far play">&#xf144;</span>
+            <span class="far pause" style="display:none">&#xf28b;</span>
           </div>
         </div>
         <div class="songs">
