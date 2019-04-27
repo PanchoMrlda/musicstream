@@ -89,6 +89,7 @@
 .main .content .playing {
   display: flex;
   justify-content: space-between;
+  min-height: 74px;
 }
 
 .main .content .playing .info {
