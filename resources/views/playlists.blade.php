@@ -51,19 +51,38 @@
         <div class="main-nav__item"></div>
         <div class="main-nav__item"></div>
       </nav>
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, velit et feugiat semper, sapien diam fringilla nibh, et ullamcorper mi urna quis sem. Phasellus posuere aliquet diam, ut pretium urna ultrices sed. Maecenas ullamcorper leo at lorem tempor, at sodales nibh fringilla. Praesent euismod feugiat lacus porttitor sagittis. Mauris nec volutpat neque. Fusce in erat id libero tincidunt eleifend a cursus mauris. Pellentesque leo urna, pharetra eget commodo at, varius eu massa. Integer sed tellus non enim scelerisque sagittis. Vestibulum sed cursus nibh. Ut mattis lorem eu dignissim hendrerit. Sed ultrices porta neque, vitae bibendum neque condimentum a.
-        </p>
-        <p>
-          In eleifend interdum nunc, eget sagittis risus aliquet vel. Proin id pretium mauris, sit amet dictum ex. Praesent ut tempus odio, non mattis nisi. Nullam dignissim leo lacus, dignissim maximus purus rutrum at. Sed ornare mattis nisi. Nam consectetur volutpat nisi sed lacinia. Cras dui velit, maximus id bibendum at, blandit eu quam. Integer vel sem at leo egestas venenatis eu sit amet diam. Praesent luctus turpis nec elit aliquet gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam et rutrum quam. Cras lacinia quis risus non ullamcorper. Nulla ac ante consectetur, lacinia mi vitae, porta urna. Nulla sit amet enim aliquam, fermentum justo ac, commodo urna. Fusce eget vulputate quam.
-        </p>
-        <p>
-          Nulla congue ut nulla eu blandit. Mauris sed felis at massa lacinia dignissim. Suspendisse tincidunt, enim sed bibendum tincidunt, eros elit fringilla nunc, eu fringilla ex arcu ac nunc. Nullam cursus scelerisque odio quis elementum. Maecenas efficitur pretium nisl, eu luctus purus egestas vitae. Nam volutpat dolor orci, nec laoreet dolor pulvinar eu. Sed congue fringilla massa eu suscipit. Donec non dolor at ligula dignissim consequat vel quis sapien. Proin quis metus in magna ullamcorper maximus vitae a velit. Mauris bibendum nisi nisi, eget dictum sapien fermentum ac. Vestibulum et volutpat tortor, vel elementum enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere laoreet enim, vel facilisis urna molestie ut. Suspendisse eleifend nunc ut tincidunt pellentesque. In facilisis, erat viverra efficitur posuere, sem dolor vulputate leo, vel luctus est lorem a erat. Pellentesque ut viverra mauris.
-        </p>
-      </div>
-      </main>
-      <footer class="footer">Footer</footer>
+      <section class="content">
+        <div class="playing">
+          <div class="info">
+            <span class="song">Inis Mona</span>
+            <br>
+            <span class="artist">Eluveitie</span>
+          </div>
+          <div class="button">
+            <img class="oval" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb73862c5322c00090d265e/img/playlist-oval@2x.png>
+            <img class="pause-icon" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cc1b5f9dc4425000aa8c472/img/playlist-combined-shape-1@2x.png>
+          </div>
+        </div>
+            @if(count($songs)> 0)
+            @foreach($songs as $index => $song)
+            <div class="songcontainer" onclick="playAudio" src="{{$song->getAudioUrl()}}" style="top: {{($index + 1) * 88}}px;">
+              <div class="songname">{{$song->name}}</div>
+              <div class="songartistname">{{$song->artist->name}}</div>
+            </div>
+            @endforeach
+            @endif
+            <div class=dividers>
+              @if(count($songs)> 0)
+              @foreach($songs as $index => $song)
+              <img class=divider style="top: {{($index + 1) * 88}}px;" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png>
+              @endforeach
+              @endif
+            </div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Footer</footer>
 </body>
 
 </html>
