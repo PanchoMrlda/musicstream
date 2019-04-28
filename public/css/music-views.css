@@ -284,3 +284,23 @@
   background-color: rgba(215, 215, 215, 0.00);
   color: rgba(0, 0, 0, 0.25);
 }
+
+.main .content .top-of-the-week .top-title {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .content .top-of-the-week .top-title .see-all {
+  font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
+  font-size: 13.0px;
+  color: rgba(40, 193, 181, 1.0);
+  text-align: left;
+}
+
+.main .content .top-of-the-week .top-title .title {
+  font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(51, 51, 51, 1.0);
+  text-align: left;
+}
