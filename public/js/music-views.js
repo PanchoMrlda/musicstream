@@ -4,6 +4,8 @@ var audio = new Audio();
  * METHODS
  */
 function setAudioInfo(song, artist) {
+  song = song || "Not playing";
+  artist = artist || "Not playing";
   document.getElementsByClassName("song")[0].innerHTML = song;
   document.getElementsByClassName("artist")[0].innerHTML = artist;
 }
@@ -54,10 +56,9 @@ function footerGoTo(url, title) {
         indexTagEnd = response.indexOf("</" + tag);
         response = response.substring(indexTagBegin, indexTagEnd);
         document.getElementsByTagName(tag)[0].innerHTML = response;
-        if (url === "/playlists" && audio.src) {
-          setPlayPauseButton();
-          setAudioInfo(audio.song, audio.artist);
-        }
+        setPlayPauseButton();
+        setAudioInfo(audio.song, audio.artist);
+        initEvents();
       }
     };
     xmlHttp.open("GET", url, true);
@@ -70,17 +71,21 @@ function footerGoTo(url, title) {
 /**
  * EVENTS
  */
-Array.prototype.map.call(document.getElementsByClassName("far"), function (element) {
-  element.addEventListener("click", function () {
-    if (audio.paused && audio.src) {
-      audio.play();
-    } else if (!audio.paused && audio.src) {
-      audio.pause();
-    }
-    setPlayPauseButton();
+function initEvents() {
+  Array.prototype.map.call(document.getElementsByClassName("far"), function (element) {
+    element.addEventListener("click", function () {
+      if (audio.paused && audio.src) {
+        audio.play();
+      } else if (!audio.paused && audio.src) {
+        audio.pause();
+      }
+      setPlayPauseButton();
+    });
   });
-});
+  
+  audio.addEventListener("play", function () {
+    setPlayPauseButton();
+  });  
+}
 
-audio.addEventListener("play", function () {
-  setPlayPauseButton();
-});
+initEvents();
