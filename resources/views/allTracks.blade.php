@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name=author content="Musically by Pancho">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>All Tracks</title>
