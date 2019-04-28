@@ -48,6 +48,7 @@
           <span class="name">{{$song->name}}</span>
           <br>
           <span class="artist">{{$song->artist->name}}</span>
+          <span class="song-duration">{{$song->durationToString()}}</span>
         </div>
         @endforeach
         @endif
