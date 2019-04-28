@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
 </head>
 
 <body class="body">
@@ -78,13 +76,13 @@
       </div>
       <span class="icon-caption">Top Hits</span>
     </a>
-    <a class="anchor" onclick="footerGoTo('/allTracks')">
+    <a class="anchor" onclick="footerGoTo('/allTracks', 'All Tracks')">
       <div class="icon">
         <img class="shape" src="images/all-tracks.png">
       </div>
-      <span class="icon-caption">All tracks</span>
+      <span class="icon-caption">All Tracks</span>
     </a>
-    <a class="anchor" onclick="footerGoTo('/playlists')">
+    <a class="anchor" onclick="footerGoTo('/playlists', 'Playlists')">
       <div class="icon">
         <img class="shape" src="images/playlists-white.png">
       </div>
