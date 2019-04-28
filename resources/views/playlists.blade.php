@@ -45,9 +45,9 @@
     <section class="content">
       <div class="playing">
         <div class="info">
-          <span class="song"></span>
+          <span class="song">Not playing</span>
           <br>
-          <span class="artist"></span>
+          <span class="artist">Not playing</span>
         </div>
         <div class="button">        
           <span class="far play">&#xf144;</span>
