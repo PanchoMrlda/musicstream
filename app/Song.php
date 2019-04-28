@@ -72,4 +72,14 @@ class Song extends Model
     $this->plays = $this->plays + 1;
     $this->save();
   }
+
+  /**
+   * Get the song's duration in mm:ss format
+   */
+  public function durationToString()
+  {
+    $minutes = intval($this->duration / 60);
+    $seconds = $this->duration % 60;
+    return $minutes . ':' . sprintf('%02d', $seconds);
+  }
 }
