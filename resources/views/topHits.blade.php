@@ -24,19 +24,6 @@
       src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb711d1c5322c00090d23c9/fonts/SF-Pro-Display-Bold.otf') format("opentype");
     }
 
-    .tophit {
-      width: 100%;
-      min-width: 375px;
-      height: 100vh;
-      min-height: 812px;
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      background-color: rgba(255, 255, 255, 1.0)
-    }
-
     a {
       text-decoration: none
     }
@@ -57,7 +44,7 @@
       -webkit-text-size-adjust: none
     }
 
-    .tophit .iphonexelements {
+    .body .iphonexelements {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 812px;
@@ -70,7 +57,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexhomeindicatorhomeindicatoronlight {
+    .body .iphonexelements .iphonexhomeindicatorhomeindicatoronlight {
       background-color: rgba(255, 255, 255, 0.0);
       top: 778px;
       height: 34px;
@@ -85,7 +72,7 @@
       opacity: .06
     }
 
-    .tophit .iphonexelements .iphonexhomeindicatorhomeindicatoronlight .background {
+    .body .iphonexelements .iphonexhomeindicatorhomeindicatoronlight .background {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 34px;
@@ -98,7 +85,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexhomeindicatorhomeindicatoronlight .rectangle24 {
+    .body .iphonexelements .iphonexhomeindicatorhomeindicatoronlight .rectangle24 {
       background-color: rgba(0, 0, 0, 1.0);
       top: 20px;
       height: 5px;
@@ -112,7 +99,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -126,7 +113,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .background {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .background {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -139,7 +126,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 4px;
       height: 21px;
@@ -152,7 +139,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery {
       background-color: rgba(255, 255, 255, 0.0);
       top: 4px;
       height: 12px;
@@ -165,7 +152,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .border {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .border {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 12px;
@@ -184,7 +171,7 @@
       opacity: .35
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .cap {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .cap {
       background-color: rgba(255, 255, 255, 0.0);
       top: 4px;
       height: 4px;
@@ -198,7 +185,7 @@
       opacity: .4
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .capacity {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .battery .capacity {
       background-color: rgba(0, 0, 0, 1.0);
       top: 2px;
       height: 7px;
@@ -212,7 +199,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .wifi {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .wifi {
       background-color: rgba(255, 255, 255, 0.0);
       top: 4px;
       height: 11px;
@@ -225,7 +212,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .cellularconnection {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .cellularconnection {
       background-color: rgba(255, 255, 255, 0.0);
       top: 5px;
       height: 11px;
@@ -238,7 +225,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -252,7 +239,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle .background1 {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle .background1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -265,7 +252,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle .u21b3time {
+    .body .iphonexelements .iphonexstatusbarsstatusbarblack .iphonexstatusbarsstatusbarblack1 .timestyle .u21b3time {
       background-color: rgba(255, 255, 255, 0.0);
       top: 3px;
       height: auto;
@@ -284,7 +271,7 @@
       line-height: 16.0px
     }
 
-    .tophit .content {
+    .body .content {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 727px;
@@ -298,7 +285,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .bg {
+    .body .content .bg {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 727px;
@@ -312,7 +299,7 @@
       opacity: .05
     }
 
-    .tophit .content .profileimage {
+    .body .content .profileimage {
       background-color: rgba(255, 255, 255, 0.0);
       top: 61px;
       height: 35px;
@@ -325,7 +312,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .profileimage .profileimage1 {
+    .body .content .profileimage .profileimage1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 35px;
@@ -338,7 +325,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek {
+    .body .content .topoftheweek {
       background-color: rgba(255, 255, 255, 0.0);
       top: 196px;
       height: 335px;
@@ -351,7 +338,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .toptitle {
+    .body .content .topoftheweek .toptitle {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 35px;
@@ -364,7 +351,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .toptitle .button {
+    .body .content .topoftheweek .toptitle .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 1px;
       height: 15px;
@@ -377,7 +364,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .toptitle .button .seeall {
+    .body .content .topoftheweek .toptitle .button .seeall {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -395,7 +382,7 @@
       line-height: 15.0px
     }
 
-    .tophit .content .topoftheweek .toptitle .subtitle {
+    .body .content .topoftheweek .toptitle .subtitle {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 16px;
@@ -408,7 +395,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .toptitle .subtitle .topoftheweek1 {
+    .body .content .topoftheweek .toptitle .subtitle .topoftheweek1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -426,7 +413,7 @@
       line-height: 16.0px
     }
 
-    .tophit .content .topoftheweek .toptitle .divider {
+    .body .content .topoftheweek .toptitle .divider {
       background-color: rgba(255, 255, 255, 0.0);
       top: 33px;
       height: 2px;
@@ -439,7 +426,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .toptitle .divider .line4 {
+    .body .content .topoftheweek .toptitle .divider .line4 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 2px;
@@ -453,7 +440,7 @@
       opacity: .1
     }
 
-    .tophit .content .topoftheweek .a1 {
+    .body .content .topoftheweek .a1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 50px;
       height: 85px;
@@ -466,7 +453,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .trackimage {
+    .body .content .topoftheweek .a1 .trackimage {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -481,7 +468,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .trackimage .mask {
+    .body .content .topoftheweek .a1 .trackimage .mask {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -495,7 +482,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .trackimage .bitmap {
+    .body .content .topoftheweek .a1 .trackimage .bitmap {
       background-color: rgba(255, 255, 255, 0.0);
       top: -11px;
       height: 146px;
@@ -508,7 +495,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .nameandartist {
+    .body .content .topoftheweek .a1 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -521,7 +508,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .nameandartist .novemberrain {
+    .body .content .topoftheweek .a1 .nameandartist .novemberrain {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -539,7 +526,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweek .a1 .nameandartist .gunsnroses {
+    .body .content .topoftheweek .a1 .nameandartist .gunsnroses {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -557,7 +544,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweek .a1 .button {
+    .body .content .topoftheweek .a1 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -570,7 +557,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .button .buttonbg {
+    .body .content .topoftheweek .a1 .button .buttonbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 25px;
@@ -584,7 +571,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a1 .button .get {
+    .body .content .topoftheweek .a1 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -602,7 +589,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .topoftheweek .a2 {
+    .body .content .topoftheweek .a2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 150px;
       height: 85px;
@@ -615,7 +602,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .trackimage {
+    .body .content .topoftheweek .a2 .trackimage {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -630,7 +617,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .trackimage .mask {
+    .body .content .topoftheweek .a2 .trackimage .mask {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -644,7 +631,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .trackimage .bitmap {
+    .body .content .topoftheweek .a2 .trackimage .bitmap {
       background-color: rgba(255, 255, 255, 0.0);
       top: -14px;
       height: 122px;
@@ -657,7 +644,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .nameandartist {
+    .body .content .topoftheweek .a2 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -670,7 +657,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .nameandartist .chopsuey {
+    .body .content .topoftheweek .a2 .nameandartist .chopsuey {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -688,7 +675,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweek .a2 .nameandartist .systemofadown {
+    .body .content .topoftheweek .a2 .nameandartist .systemofadown {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -706,7 +693,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweek .a2 .button {
+    .body .content .topoftheweek .a2 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -719,7 +706,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .button .buttonbg {
+    .body .content .topoftheweek .a2 .button .buttonbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 25px;
@@ -733,7 +720,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a2 .button .get {
+    .body .content .topoftheweek .a2 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -751,7 +738,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .topoftheweek .a3 {
+    .body .content .topoftheweek .a3 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 250px;
       height: 85px;
@@ -764,7 +751,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .trackimage {
+    .body .content .topoftheweek .a3 .trackimage {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -779,7 +766,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .trackimage .mask {
+    .body .content .topoftheweek .a3 .trackimage .mask {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -793,7 +780,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .trackimage .bitmap {
+    .body .content .topoftheweek .a3 .trackimage .bitmap {
       background-color: rgba(255, 255, 255, 0.0);
       top: -28px;
       height: 138px;
@@ -806,7 +793,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .nameandartist {
+    .body .content .topoftheweek .a3 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -819,7 +806,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .nameandartist .thetroopers {
+    .body .content .topoftheweek .a3 .nameandartist .thetroopers {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -837,7 +824,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweek .a3 .nameandartist .ironmaiden {
+    .body .content .topoftheweek .a3 .nameandartist .ironmaiden {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -855,7 +842,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweek .a3 .button {
+    .body .content .topoftheweek .a3 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -868,7 +855,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .button .buttonbg {
+    .body .content .topoftheweek .a3 .button .buttonbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 25px;
@@ -882,7 +869,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweek .a3 .button .get {
+    .body .content .topoftheweek .a3 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -900,7 +887,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .topoftheweekcopy {
+    .body .content .topoftheweekcopy {
       background-color: rgba(255, 255, 255, 0.0);
       top: 582px;
       height: 335px;
@@ -913,7 +900,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .toptitle {
+    .body .content .topoftheweekcopy .toptitle {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 35px;
@@ -926,7 +913,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .button {
+    .body .content .topoftheweekcopy .toptitle .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 1px;
       height: 15px;
@@ -939,7 +926,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .button .seeall {
+    .body .content .topoftheweekcopy .toptitle .button .seeall {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -957,7 +944,7 @@
       line-height: 15.0px
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .subtitle {
+    .body .content .topoftheweekcopy .toptitle .subtitle {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 16px;
@@ -970,7 +957,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .subtitle .alltimehits {
+    .body .content .topoftheweekcopy .toptitle .subtitle .alltimehits {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -988,7 +975,7 @@
       line-height: 16.0px
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .divider {
+    .body .content .topoftheweekcopy .toptitle .divider {
       background-color: rgba(255, 255, 255, 0.0);
       top: 33px;
       height: 2px;
@@ -1001,7 +988,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .toptitle .divider .line4 {
+    .body .content .topoftheweekcopy .toptitle .divider .line4 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 2px;
@@ -1015,7 +1002,7 @@
       opacity: .1
     }
 
-    .tophit .content .topoftheweekcopy .a1 {
+    .body .content .topoftheweekcopy .a1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 50px;
       height: 85px;
@@ -1028,7 +1015,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .trackimage {
+    .body .content .topoftheweekcopy .a1 .trackimage {
       background-color: rgba(239, 239, 239, 1.0);
       top: 0;
       height: 85px;
@@ -1043,7 +1030,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .trackimage .mask {
+    .body .content .topoftheweekcopy .a1 .trackimage .mask {
       background-color: rgba(239, 239, 239, 1.0);
       top: 0;
       height: 85px;
@@ -1057,7 +1044,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .trackimage .bitmap {
+    .body .content .topoftheweekcopy .a1 .trackimage .bitmap {
       background-color: rgba(255, 255, 255, 0.0);
       top: -36px;
       height: 135px;
@@ -1071,7 +1058,7 @@
       opacity: .8
     }
 
-    .tophit .content .topoftheweekcopy .a1 .nameandartist {
+    .body .content .topoftheweekcopy .a1 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -1084,7 +1071,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .nameandartist .heavenu2019sdoor {
+    .body .content .topoftheweekcopy .a1 .nameandartist .heavenu2019sdoor {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -1102,7 +1089,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweekcopy .a1 .nameandartist .gunsnroses {
+    .body .content .topoftheweekcopy .a1 .nameandartist .gunsnroses {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -1120,7 +1107,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweekcopy .a1 .button {
+    .body .content .topoftheweekcopy .a1 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -1133,7 +1120,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .button .rectangle3 {
+    .body .content .topoftheweekcopy .a1 .button .rectangle3 {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 25px;
@@ -1147,7 +1134,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a1 .button .get {
+    .body .content .topoftheweekcopy .a1 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -1165,7 +1152,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .topoftheweekcopy .a2 {
+    .body .content .topoftheweekcopy .a2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 150px;
       height: 85px;
@@ -1178,7 +1165,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a2 .image {
+    .body .content .topoftheweekcopy .a2 .image {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -1192,7 +1179,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a2 .nameandartist {
+    .body .content .topoftheweekcopy .a2 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -1205,7 +1192,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a2 .nameandartist .chopsuey {
+    .body .content .topoftheweekcopy .a2 .nameandartist .chopsuey {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -1223,7 +1210,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweekcopy .a2 .nameandartist .systemofadown {
+    .body .content .topoftheweekcopy .a2 .nameandartist .systemofadown {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -1241,7 +1228,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweekcopy .a2 .button {
+    .body .content .topoftheweekcopy .a2 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -1254,7 +1241,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a2 .button .rectangle3 {
+    .body .content .topoftheweekcopy .a2 .button .rectangle3 {
       background-color: rgba(255, 89, 117, 1.0);
       top: 0;
       height: 25px;
@@ -1268,7 +1255,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a2 .button .get {
+    .body .content .topoftheweekcopy .a2 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -1286,7 +1273,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .topoftheweekcopy .a3 {
+    .body .content .topoftheweekcopy .a3 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 250px;
       height: 85px;
@@ -1299,7 +1286,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a3 .image {
+    .body .content .topoftheweekcopy .a3 .image {
       background-color: rgba(238, 238, 238, 1.0);
       top: 0;
       height: 85px;
@@ -1313,7 +1300,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a3 .nameandartist {
+    .body .content .topoftheweekcopy .a3 .nameandartist {
       background-color: rgba(255, 255, 255, 0.0);
       top: 18px;
       height: 49px;
@@ -1326,7 +1313,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a3 .nameandartist .thetroopers {
+    .body .content .topoftheweekcopy .a3 .nameandartist .thetroopers {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -1344,7 +1331,7 @@
       line-height: 23.0px
     }
 
-    .tophit .content .topoftheweekcopy .a3 .nameandartist .ironmaiden {
+    .body .content .topoftheweekcopy .a3 .nameandartist .ironmaiden {
       background-color: rgba(255, 255, 255, 0.0);
       top: 31px;
       height: auto;
@@ -1362,7 +1349,7 @@
       line-height: 18.0px
     }
 
-    .tophit .content .topoftheweekcopy .a3 .button {
+    .body .content .topoftheweekcopy .a3 .button {
       background-color: rgba(255, 255, 255, 0.0);
       top: 30px;
       height: 25px;
@@ -1375,7 +1362,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a3 .button .rectangle3 {
+    .body .content .topoftheweekcopy .a3 .button .rectangle3 {
       background-color: rgba(255, 89, 117, 1.0);
       top: 0;
       height: 25px;
@@ -1389,7 +1376,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .topoftheweekcopy .a3 .button .get {
+    .body .content .topoftheweekcopy .a3 .button .get {
       background-color: rgba(255, 255, 255, 0.0);
       top: 6px;
       height: auto;
@@ -1407,7 +1394,7 @@
       line-height: 14.0px
     }
 
-    .tophit .content .search {
+    .body .content .search {
       background-color: rgba(255, 255, 255, 0.0);
       top: 125px;
       height: 40px;
@@ -1420,7 +1407,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .search .rectangle {
+    .body .content .search .rectangle {
       background-color: rgba(215, 215, 215, 1.0);
       top: 0;
       height: 40px;
@@ -1435,7 +1422,7 @@
       opacity: .09
     }
 
-    .tophit .content .search .shape {
+    .body .content .search .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 11px;
       height: 18px;
@@ -1448,7 +1435,7 @@
       transform: rotate(0)
     }
 
-    .tophit .content .search .searchinstore {
+    .body .content .search .searchinstore {
       background-color: rgba(255, 255, 255, 0.0);
       top: 12px;
       height: auto;
@@ -1466,7 +1453,7 @@
       line-height: 16.0px
     }
 
-    .tophit .tabbar {
+    .body .tabbar {
       background-color: rgba(255, 255, 255, 0.0);
       top: 727px;
       height: 85px;
@@ -1479,7 +1466,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .tabbarbg {
+    .body .tabbar .tabbarbg {
       background-color: rgba(40, 193, 181, 1.0);
       top: 0;
       height: 85px;
@@ -1492,7 +1479,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems {
+    .body .tabbar .menuitems {
       background-color: rgba(255, 255, 255, 0.0);
       top: 12px;
       height: 41px;
@@ -1505,7 +1492,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .browse {
+    .body .tabbar .menuitems .browse {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -1518,7 +1505,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .browse .tophit1 {
+    .body .tabbar .menuitems .browse .tophit1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -1537,7 +1524,7 @@
       white-space: nowrap;
     }
 
-    .tophit .tabbar .menuitems .browse .icon {
+    .body .tabbar .menuitems .browse .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1550,7 +1537,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .browse .icon .shape {
+    .body .tabbar .menuitems .browse .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1563,7 +1550,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .alltracks {
+    .body .tabbar .menuitems .alltracks {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 41px;
@@ -1576,7 +1563,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .alltracks .alltracks1 {
+    .body .tabbar .menuitems .alltracks .alltracks1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 27px;
       height: auto;
@@ -1595,7 +1582,7 @@
       line-height: 14.0px
     }
 
-    .tophit .tabbar .menuitems .alltracks .icon {
+    .body .tabbar .menuitems .alltracks .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 21px;
@@ -1608,7 +1595,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .alltracks .icon .shape {
+    .body .tabbar .menuitems .alltracks .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 8px;
       height: 2px;
@@ -1622,7 +1609,7 @@
       opacity: .25
     }
 
-    .tophit .tabbar .menuitems .alltracks .icon .shape1 {
+    .body .tabbar .menuitems .alltracks .icon .shape1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 19px;
@@ -1636,7 +1623,7 @@
       opacity: .25
     }
 
-    .tophit .tabbar .menuitems .alltracks .icon .shape2 {
+    .body .tabbar .menuitems .alltracks .icon .shape2 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 19px;
@@ -1650,7 +1637,7 @@
       opacity: .25
     }
 
-    .tophit .tabbar .menuitems .playlists {
+    .body .tabbar .menuitems .playlists {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -1663,7 +1650,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .playlists .playlists1 {
+    .body .tabbar .menuitems .playlists .playlists1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -1682,7 +1669,7 @@
       line-height: 14.0px
     }
 
-    .tophit .tabbar .menuitems .playlists .icon {
+    .body .tabbar .menuitems .playlists .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1695,7 +1682,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .playlists .icon .shape {
+    .body .tabbar .menuitems .playlists .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1709,7 +1696,7 @@
       opacity: .25
     }
 
-    .tophit .tabbar .menuitems .search {
+    .body .tabbar .menuitems .search {
       background-color: rgba(255, 255, 255, 0.0);
       top: 2px;
       height: 39px;
@@ -1722,7 +1709,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .search .search1 {
+    .body .tabbar .menuitems .search .search1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 25px;
       height: auto;
@@ -1741,7 +1728,7 @@
       line-height: 14.0px
     }
 
-    .tophit .tabbar .menuitems .search .icon {
+    .body .tabbar .menuitems .search .icon {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1754,7 +1741,7 @@
       transform: rotate(0)
     }
 
-    .tophit .tabbar .menuitems .search .icon .shape {
+    .body .tabbar .menuitems .search .icon .shape {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 18px;
@@ -1768,7 +1755,7 @@
       opacity: .25
     }
 
-    .tophit .title {
+    .body .title {
       background-color: rgba(255, 255, 255, 0.0);
       top: 58px;
       height: 38px;
@@ -1781,7 +1768,7 @@
       transform: rotate(0)
     }
 
-    .tophit .title .tophit1 {
+    .body .title .tophit1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: auto;
@@ -1799,7 +1786,7 @@
       line-height: 38.0px
     }
 
-    .tophit .iconmenu {
+    .body .iconmenu {
       background-color: rgba(255, 255, 255, 0.0);
       top: 65px;
       height: 24px;
@@ -1812,7 +1799,7 @@
       transform: rotate(0)
     }
 
-    .tophit .iconmenu .iconmenu1 {
+    .body .iconmenu .iconmenu1 {
       background-color: rgba(255, 255, 255, 0.0);
       top: 0;
       height: 24px;
@@ -1895,31 +1882,22 @@
   <script src="js/music-views.js" defer="true"></script>
 </head>
 
-<body style="margin: 0;
- background: rgba(255, 255, 255, 1.0);"><input type=hidden id=anPageName name=page value=tophit>
-  <div class=tophit>
-    <div style="width: 375px; height: 100%; position:relative; margin:auto;">
-      <div class=iphonexelements>
-        <div class=iphonexhomeindicatorhomeindicatoronlight>
-          <div class=background></div>
-          <div class=rectangle24></div>
-        </div>
-        <div class=iphonexstatusbarsstatusbarblack>
-          <div class=background></div>
-          <div class=iphonexstatusbarsstatusbarblack1>
-            <div class=battery>
-              <div class=border></div><img class=cap src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-cap@2x.png> <div class=capacity>
-            </div>
-          </div><img class=wifi src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-wifi@2x.png> <img class=cellularconnection src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb711d1c5322c00090d23c9/img/holo-music-playlist-copy-cellular-connection@2x.png> <div class=timestyle>
-          <div class=background1></div>
-          <div class=u21b3time><span class="span1">9:4</span><span class="span2">1</span></div>
-        </div>
+<body class="body">
+  <header class="header">
+    <div class="icon-menu-container">
+      <img class="icon-menu" src=images/icon-menu.png>
+    </div>
+    <div class="title-container">
+      <div class="title">
+        <span>Top Hits</span>
       </div>
     </div>
-  </div>
+    <figure class="profile-image-container">
+      <img class="profile-image" src=images/pancho.jpg>
+    </figure>
+  </header>
   <div class=content>
-    <div class=bg></div>
-    <div class=profileimage><img class=profileimage1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-profile-image@2x.png> </div> <div class=topoftheweek>
+    <div class=topoftheweek>
       <div class=toptitle>
         <div class=button>
           <div class=seeall>SEE ALL</div>
@@ -2008,7 +1986,9 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+  </div>
+</div>
+  <footer class="footer">
     <a class="anchor" onclick="footerGoTo('/topHits', 'Top Hits')">
       <div class="icon">
         <img class="shape" src="images/top-hits-white.png">
@@ -2034,10 +2014,6 @@
       <span class="icon-caption">Search</span>
     </a>
   </footer>
-          <div class=iconmenu><img class=iconmenu1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png> </div> </div> </div> <script>anima_isHidden=function(e){if(!(e instanceof HTMLElement))return!1;if(getComputedStyle(e).display=="none")return!0;else if(e.parentNode&&anima_isHidden(e.parentNode))return!0;return!1};anima_loadAsyncSrcForTag=function(tag){var elements=document.getElementsByTagName(tag);var toLoad=[];for(var i=0;i<elements.length;i++){var e=elements[i];var src=e.getAttribute("src");var loaded=(src!=undefined&&src.length>0&&src!='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');if(loaded)continue;var asyncSrc=e.getAttribute("anima-src");if(asyncSrc==undefined||asyncSrc.length==0)continue;if(anima_isHidden(e))continue;toLoad.push(e)}
-              toLoad.sort(function(a,b){return anima_getTop(a)-anima_getTop(b)});for(var i=0;i<toLoad.length;i++){var e=toLoad[i];var asyncSrc=e.getAttribute("anima-src");e.setAttribute("src",asyncSrc)}};anima_pauseHiddenVideos=function(tag){var elements=document.getElementsByTagName("video");for(var i=0;i<elements.length;i++){var e=elements[i];var isPlaying=!!(e.currentTime>0&&!e.paused&&!e.ended&&e.readyState>2);var isHidden=anima_isHidden(e);if(!isPlaying&&!isHidden&&e.getAttribute("autoplay")=="autoplay"){e.play()}
-                else if(isPlaying&&isHidden){e.pause()}}};anima_loadAsyncSrc=function(tag){anima_loadAsyncSrcForTag("img");anima_loadAsyncSrcForTag("iframe");anima_loadAsyncSrcForTag("video");anima_pauseHiddenVideos()};var anima_getTop=function(e){var top=0;do{top+=e.offsetTop||0;e=e.offsetParent}while(e);return top};anima_loadAsyncSrc();anima_old_onResize=window.onresize;anima_new_onResize=undefined;anima_updateOnResize=function(){if(anima_new_onResize==undefined||window.onresize!=anima_new_onResize){anima_new_onResize=function(x){if(anima_old_onResize!=undefined)anima_old_onResize(x);anima_loadAsyncSrc()}
-                window.onresize=anima_new_onResize;setTimeout(function(){anima_updateOnResize()},3000)}};anima_updateOnResize();setTimeout(function(){anima_loadAsyncSrc()},200)</script>
 </body>
 
 </html>
