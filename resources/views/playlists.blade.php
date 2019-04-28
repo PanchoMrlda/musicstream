@@ -78,13 +78,13 @@
       </div>
       <span class="icon-caption">Top Hits</span>
     </a>
-    <a class="anchor" onclick="footerGoTo('allTracks')">
+    <a class="anchor" onclick="footerGoTo('/allTracks')">
       <div class="icon">
         <img class="shape" src="images/all-tracks.png">
       </div>
       <span class="icon-caption">All tracks</span>
     </a>
-    <a class="anchor" href="playlists">
+    <a class="anchor" onclick="footerGoTo('/playlists')">
       <div class="icon">
         <img class="shape" src="images/playlists-white.png">
       </div>
