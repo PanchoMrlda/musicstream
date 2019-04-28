@@ -71,8 +71,8 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="anchor" href="topHits">
-    <div class="icon">
+    <a class="anchor" onclick="footerGoTo('/topHits', 'Top Hits')">
+      <div class="icon">
         <img class="shape" src="images/top-hits.png">
       </div>
       <span class="icon-caption">Top Hits</span>
