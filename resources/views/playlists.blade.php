@@ -69,7 +69,6 @@
         @endforeach
         @endif
       </div>
-      </div>
     </section>
   </main>
   <footer class="footer">
