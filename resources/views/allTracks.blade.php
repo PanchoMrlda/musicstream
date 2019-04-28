@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <link rel="shortcut icon" type=image/png href="images/favicon.png">
   <meta name=author content="Musically by Pancho">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
