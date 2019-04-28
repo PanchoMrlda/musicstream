@@ -3,6 +3,15 @@ var audio = new Audio();
 /**
  * METHODS
  */
+function setFooterIcon(title) {
+  var icons = document.getElementsByClassName("anchor");
+  var targetIcon = Array.prototype.find.call(icons, function (element) {
+    return element.innerHTML.includes(title);
+  });
+  targetIcon.style.opacity = 1;
+  targetIcon.children[1].style.color = "white";
+}
+
 function setAudioInfo(song, artist) {
   song = song || "Not playing";
   artist = artist || "Not playing";
@@ -59,6 +68,7 @@ function footerGoTo(url, title) {
         setPlayPauseButton();
         setAudioInfo(audio.song, audio.artist);
         initEvents();
+        setFooterIcon(title);
       }
     };
     xmlHttp.open("GET", url, true);
@@ -89,3 +99,4 @@ function initEvents() {
 }
 
 initEvents();
+setFooterIcon(document.title);
