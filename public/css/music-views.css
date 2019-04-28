@@ -82,7 +82,7 @@
   width: 100%;
   flex: 1;
   background-color: white;
-  margin-top: 75px;
+  padding: 75px 30px 0 30px;
   padding-bottom: 70px;
 }
 
@@ -93,7 +93,6 @@
 }
 
 .main .content .playing .info {
-  margin-left: 30px;
   padding: 15px 0 0 0;
   background-color: rgba(255, 255, 255, 0.0);
   display: flex;
@@ -120,7 +119,6 @@
 }
 
 .main .content .playing .button {
-  margin-right: 30px;
   padding: 15px 0 0 0;
   background-color: rgba(255, 255, 255, 0.0);
 }
@@ -136,7 +134,6 @@
 
 .main .content .songs {
   background-color: rgba(255, 255, 255, 0.0);
-  margin: 0 30px 0 30px;
 }
 
 .main .content .songs .song-container {
@@ -227,8 +224,6 @@
 }
 
 .main .main-nav {
-  margin-left: 30px;
-  margin-right: 30px;
   height: 100px;
   display: flex;
   overflow: auto;
