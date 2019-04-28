@@ -41,8 +41,13 @@
       </div>
       <div class="search">
         <img class="header-search-icon" src="images/search.png">
-        <!-- <span class="search-in-store">Search in Store</span> -->
         <input class="search-in-store" type="text" placeholder="Search in Store">
+      </div>
+      <div class="top-of-the-week">
+        <div class="top-title">
+          <span class="title">Top of the week</span>
+          <span class="see-all">SEE ALL</span>
+        </div>
       </div>
     </section>
   </main>
