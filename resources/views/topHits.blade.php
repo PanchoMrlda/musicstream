@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-
-<!-- To get the source code upgrade to a Pro plan and Export code https://www.animaapp.com/pricing - Sample Exported Code: https://medium.com/sketch-app-sources/how-to-export-sketch-to-html-65c427b3aa3a -->
-
-
 <html>
 
 <head>
@@ -1896,6 +1891,8 @@
     }
   </style>
   <meta name=author content="Launchpad by Anima">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
+  <script src="js/music-views.js" defer="true"></script>
 </head>
 
 <body style="margin: 0;
@@ -2011,31 +2008,36 @@
         </div>
       </div>
     </div>
-    <div class=tabbar>
-      <div class=tabbarbg></div>
-      <div class=menuitems>
-        <div class=browse>
-          <a href="topHits">
-            <div class=tophit1>Top Hits</div>
-            <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-shape-1@2x.png> </div> </div> <div class=alltracks>
-          </a>
-          <a href="allTracks">
-            <div class=alltracks1>All tracks</div>
-            <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-1@2x.png> <img class=shape1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-2@2x.png> <img class=shape2 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb737fc148f14000d6ec9dd/img/now-playing-shape-3@2x.png> </div> </div> <div class=playlists>
-          </a>
-          <a href="playlists">
-            <div class=playlists1>Playlists</div>
-            <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-4@2x.png> </div> </div> <div class=search>
-          </a>
-          <div class=search1>Search</div>
-          <div class=icon><img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-shape-5@2x.png> </div> </div> </div> </div> <div class=title>
-            <div class=tophit1>Top Hit</div>
-          </div>
+    <footer class="footer">
+    <a class="anchor" onclick="footerGoTo('/topHits', 'Top Hits')">
+      <div class="icon">
+        <img class="shape" src="images/top-hits-white.png">
+      </div>
+      <span class="icon-caption">Top Hits</span>
+    </a>
+    <a class="anchor" onclick="footerGoTo('/allTracks', 'All Tracks')">
+      <div class="icon">
+        <img class="shape" src="images/all-tracks.png">
+      </div>
+      <span class="icon-caption">All Tracks</span>
+    </a>
+    <a class="anchor" onclick="footerGoTo('/playlists', 'Playlists')">
+      <div class="icon">
+        <img class="shape" src="images/playlists.png">
+      </div>
+      <span class="icon-caption">Playlists</span>
+    </a>
+    <a class="anchor" href="#">
+      <div class="icon">
+        <img class="shape" src="images/search.png">
+      </div>
+      <span class="icon-caption">Search</span>
+    </a>
+  </footer>
           <div class=iconmenu><img class=iconmenu1 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78a0ec5322c000d852696/img/playlist-iconmenu@2x.png> </div> </div> </div> <script>anima_isHidden=function(e){if(!(e instanceof HTMLElement))return!1;if(getComputedStyle(e).display=="none")return!0;else if(e.parentNode&&anima_isHidden(e.parentNode))return!0;return!1};anima_loadAsyncSrcForTag=function(tag){var elements=document.getElementsByTagName(tag);var toLoad=[];for(var i=0;i<elements.length;i++){var e=elements[i];var src=e.getAttribute("src");var loaded=(src!=undefined&&src.length>0&&src!='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');if(loaded)continue;var asyncSrc=e.getAttribute("anima-src");if(asyncSrc==undefined||asyncSrc.length==0)continue;if(anima_isHidden(e))continue;toLoad.push(e)}
               toLoad.sort(function(a,b){return anima_getTop(a)-anima_getTop(b)});for(var i=0;i<toLoad.length;i++){var e=toLoad[i];var asyncSrc=e.getAttribute("anima-src");e.setAttribute("src",asyncSrc)}};anima_pauseHiddenVideos=function(tag){var elements=document.getElementsByTagName("video");for(var i=0;i<elements.length;i++){var e=elements[i];var isPlaying=!!(e.currentTime>0&&!e.paused&&!e.ended&&e.readyState>2);var isHidden=anima_isHidden(e);if(!isPlaying&&!isHidden&&e.getAttribute("autoplay")=="autoplay"){e.play()}
                 else if(isPlaying&&isHidden){e.pause()}}};anima_loadAsyncSrc=function(tag){anima_loadAsyncSrcForTag("img");anima_loadAsyncSrcForTag("iframe");anima_loadAsyncSrcForTag("video");anima_pauseHiddenVideos()};var anima_getTop=function(e){var top=0;do{top+=e.offsetTop||0;e=e.offsetParent}while(e);return top};anima_loadAsyncSrc();anima_old_onResize=window.onresize;anima_new_onResize=undefined;anima_updateOnResize=function(){if(anima_new_onResize==undefined||window.onresize!=anima_new_onResize){anima_new_onResize=function(x){if(anima_old_onResize!=undefined)anima_old_onResize(x);anima_loadAsyncSrc()}
                 window.onresize=anima_new_onResize;setTimeout(function(){anima_updateOnResize()},3000)}};anima_updateOnResize();setTimeout(function(){anima_loadAsyncSrc()},200)</script>
-                <script src=launchpad-js/launchpad-banner.js async></script>
 </body>
 
 </html>
