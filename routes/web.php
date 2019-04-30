@@ -41,6 +41,9 @@
 // Route::post('/contact/submit', 'MessagesController@submit');
 
 Route::get('/', 'MusicController@index');
+Route::get('/allTracks', 'MusicController@allTracks');
+Route::get('/playlists', 'MusicController@playlists');
+Route::get('/topHits', 'MusicController@topHits');
 
 // Route::get('/topCharts', 'MusicController@topCharts');
 
