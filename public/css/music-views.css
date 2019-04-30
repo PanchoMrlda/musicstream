@@ -147,9 +147,10 @@
   max-height: 79px;
   background-color: rgba(255, 255, 255, 0.0);
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 3px solid rgba(215, 215, 215, 0.09);
 }
 
 .main .content .songs .song-container .name {
@@ -160,6 +161,7 @@
   color: rgba(51, 51, 51, 1.0);
   text-align: left;
   line-height: 23.0px;
+  padding: 5px 0;
 }
 
 .main .content .songs .song-container .artist {
@@ -170,6 +172,7 @@
   color: rgba(51, 51, 51, 1.0);
   text-align: left;
   line-height: 18.0px;
+  padding: 5px 0;
 }
 
  .divider {
@@ -185,10 +188,7 @@
   font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(51, 51, 51, 1.0);
-  text-align: right;
-  position: relative;
-  top: -45;
-  
+  text-align: right;  
 }
 
 .footer {
