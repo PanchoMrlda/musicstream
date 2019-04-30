@@ -238,6 +238,7 @@
   overflow: auto;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  align-items: center;
 }
 
 .main-nav::-webkit-scrollbar {
