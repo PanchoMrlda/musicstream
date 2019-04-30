@@ -28,6 +28,9 @@
   </header>
   <main class="main">
     <nav class="main-nav">
+      <div class="main-nav__item-add">
+        +
+      </div>
       <div class="main-nav__item">
         Favourites
       </div>
