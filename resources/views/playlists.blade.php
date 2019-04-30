@@ -31,7 +31,7 @@
       <div class="main-nav__item-add">
         +
       </div>
-      <div class="main-nav__item">
+      <div class="main-nav__item-active">
         Favourites
       </div>
       <div class="main-nav__item">
