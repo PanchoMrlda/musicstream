@@ -60,11 +60,10 @@
         @if(count($songs)> 0)
         @foreach($songs as $song)
         <div class="song-container" onclick="playAudio(this)" src="{{$song->getAudioUrl()}}" data-song="{{$song->name}}" data-artist="{{$song->artist->name}}">
-          <img class=divider src="images/song-divider.png">
-          <br>
-          <span class="name">{{$song->name}}</span>
-          <br>
-          <span class="artist">{{$song->artist->name}}</span>
+          <div>
+            <p class="name">{{$song->name}}</p>
+            <p class="artist">{{$song->artist->name}}</p>
+          </div>
         </div>
         @endforeach
         @endif
