@@ -328,15 +328,16 @@ $( function() {
   $('.ui-front:first').css('z-index', 1040);
 });
 
-function serverRequest(params, url) {
+function serverRequest(url, requestType, params = []) {
   var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  var requestData = (requestType != 'get') ? {_token: CSRF_TOKEN, params: params} : null;
   $.ajax({
     url: url,
-    type: 'POST',
-    data: {_token: CSRF_TOKEN, artistName: params},
+    type: requestType,
+    data: requestData,
     dataType: 'JSON',
     success: function (data) { 
-      console.log(data);
+      console.log('data:', data);
     }
   });
 }
