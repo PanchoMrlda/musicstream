@@ -280,6 +280,22 @@
   overflow: hidden;
 }
 
+.main .main-nav .main-nav__item-active {
+  border-radius: 100%;
+  background-color: rgba(40, 193, 181, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
+  font-size: 15.0px;
+  text-align: center;
+  max-height: 85px;
+  max-width: 85px;
+  min-height: 85px;
+  min-width: 85px;
+  margin-right: 15px;
+  line-height: 82px;
+  overflow: hidden;
+}
+
 .main .content .search {
   background-color: rgba(215, 215, 215, 0.09);
   height: 40px;
