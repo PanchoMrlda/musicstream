@@ -1,11 +1,11 @@
 @font-face {
   font-family: "SFProDisplay-Medium";
-  src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/fonts/SF-Pro-Display-Medium.otf') format("opentype");
+  src: url('fonts/SF Pro/SF-Pro-Display-Medium.otf') format("opentype");
 }
 
 @font-face {
   font-family: "SFProDisplay-Regular";
-  src: url('https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb711d1c5322c00090d23c9/fonts/SF-Pro-Display-Regular.otf') format("opentype");
+  src: url('fonts/SF Pro/SF-Pro-Display-Regular.otf') format("opentype");
 }
 
 * {
@@ -31,6 +31,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .header .icon-menu-container {
@@ -96,6 +97,7 @@
   position: -webkit-sticky;
   top: 75px;
   background-color: white;
+  z-index: 1;
 }
 
 .main .content .playing .info {
@@ -327,79 +329,91 @@
   color: rgba(0, 0, 0, 0.25);
 }
 
-.main .content .top-of-the-week .top-title {
+.main .content .top-of-the-month .top-title {
   height: 35px;
   display: flex;
   justify-content: space-between;
 }
 
-.main .content .top-of-the-week .top-title .see-all {
+.main .content .top-of-the-month .top-title .see-all {
   font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
   font-size: 13.0px;
   color: rgba(40, 193, 181, 1.0);
   text-align: left;
 }
 
-.main .content .top-of-the-week .top-title .title {
+.main .content .top-of-the-month .top-title .title {
   font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
   font-size: 14.0px;
   color: rgba(51, 51, 51, 1.0);
   text-align: left;
 }
 
-.main .content .top-of-the-week .track {
+.main .content .top-of-the-month .track {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 3px solid rgba(215, 215, 215, 0.09);
 }
 
-.main .content .top-of-the-week .track .track-image-container {
+.main .content .top-of-the-month .track .track-image-container {
   max-width: 85px;
   max-height: 85px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.main .content .top-of-the-month .track .track-image-container .song-image {
+  max-width: 90px;
+  width: calc(100vw / 5);
+  height: auto;
+  object-fit: cover;
   border-radius: 5px;
 }
 
-.main .content .top-of-the-week .track .track-image-container .song-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.main .content .top-of-the-week .track .song-info {
+.main .content .top-of-the-month .track .song-info {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.main .content .top-of-the-week .track .song-info .song-name {
+.main .content .top-of-the-month .track .song-info .song-name {
   font-family: 'SFProDisplay-Medium', Helvetica, Arial, serif;
   font-size: 19.0px;
   color: rgba(51, 51, 51, 1.0);
-  text-align: left;
+  text-align: center;
   padding: 5px 0;
 }
 
-.main .content .top-of-the-week .track .song-info .song-artist {
+.main .content .top-of-the-month .track .song-info .song-artist {
   font-family: 'SFProDisplay-Regular', Helvetica, Arial, serif;
   font-size: 14.0px;
   color: rgba(51, 51, 51, 1.0);
-  text-align: left;
+  text-align: center;
   padding: 5px 0;
 }
 
-.main .content .top-of-the-week .track .track-button {
+.main .content .top-of-the-month .track .track-button {
   background-color: rgba(40, 193, 181, 1.0);
   height: 25px;
-  width: 60px;
+  max-width: 60px;
+  min-width: 45px;
   text-align: center;
   vertical-align: middle;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.main .content .top-of-the-month .track .track-button span {
+  text-align: center;
+  vertical-align: middle;
   font-family: 'SFProDisplay-Bold', Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(255, 255, 255, 1.0);
-  line-height: 25px;
-  position: relative;
-  top: 30;
+  margin: auto;
 }
