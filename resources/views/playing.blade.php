@@ -6,8 +6,6 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" type=image/png href=https://animaproject.s3.amazonaws.com/home/favicon.png> <meta charset=UTF-8>
-  <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <style>
     @font-face {
       font-family: "SFProDisplay-Regular";
@@ -1767,7 +1765,16 @@
       }
     }
   </style>
-  <meta name=author content="Launchpad by Anima">
+  <link rel="shortcut icon" type=image/png href="images/favicon.png">
+  <meta name=author content="Musically by Pancho">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Playing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="js/music-views.js" defer="true"></script>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body style="margin: 0;
