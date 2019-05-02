@@ -40,6 +40,7 @@ function initAudio(element) {
   audio.src = element.getAttribute("src");
   audio.song = element.getAttribute("data-song");
   audio.artist = element.getAttribute("data-artist");
+  audio.id = element.getAttribute("data-id");
   setPlayPauseButton();
   playAudio();
 }
@@ -95,6 +96,24 @@ function nextTrack() {
   playAudio();
 }
 
+function getSong() {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", "songs/" + audio.id, false);
+  xmlHttp.send();
+  return JSON.parse(xmlHttp.responseText);
+}
+
+function updatePlays() {
+  var xmlHttp;
+  var CSRF_TOKEN = document.getElementsByName("csrf-token")[0].getAttribute('content');
+  var song = getSong();
+  var plays = song.plays + 1;
+  xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("PUT", "/songs/" + audio.id, true);
+  xmlHttp.setRequestHeader("Content-type", "application/json");
+  xmlHttp.send(JSON.stringify({_token: CSRF_TOKEN, plays: plays}));
+}
+
 /**
  * EVENTS
  */
@@ -115,6 +134,7 @@ function initEvents() {
   });
 
   audio.addEventListener("ended", function () {
+    updatePlays();
     nextTrack();
   });
 
