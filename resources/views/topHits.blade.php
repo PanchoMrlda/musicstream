@@ -31,9 +31,9 @@
     <section class="content">
       <div class="playing">
         <div class="info">
-          <span class="song">Not playing</span>
+          <span class="song">Not Playing</span>
           <br>
-          <span class="artist">Not playing</span>
+          <span class="artist">Not Playing</span>
         </div>
         <div class="button">        
           <span class="far play">&#xf144;</span>
@@ -44,120 +44,30 @@
         <img class="header-search-icon" src="images/search.png">
         <input class="search-in-store" type="text" placeholder="Search in Store">
       </div>
-      <div class="top-of-the-week">
+      <div class="top-of-the-month">
         <div class="top-title">
-          <span class="title">Top of the week</span>
+          <span class="title">Top of the month</span>
           <span class="see-all">SEE ALL</span>
         </div>
-        <img class=divider src="images/song-divider.png">
+        @if(count($songs)> 0)
+        @foreach($songs as $song)
         <div class="track">
           <div class="track-image-container">
-            <img class="song-image" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap@2x.png>
+            <img class="song-image" src="{{$song->getImageUrl()}}">
           </div>
           <div class="song-info">
-            <p class="song-name">November Rain</p>
-            <p class="song-artist">Guns n Roses</p>
+            <p class="song-name">{{$song->name}}</p>
+            <p class="song-artist">{{$song->artist->name}}</p>
           </div>
           <div class="track-button">
-            GET
+            <span>GET</span>
           </div>
         </div>
+        @endforeach
+        @endif
       </div>
     </section>
   </main>
-  <!-- <div class=content>
-    <div class=topoftheweek>
-      <div class=toptitle>
-        <div class=button>
-          <div class=seeall>SEE ALL</div>
-        </div>
-        <div class=subtitle>
-          <div class=topoftheweek1>Top of the week</div>
-        </div>
-        <div class=divider><img class=line4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> </div> </div> <div class=a1>
-          <div class=trackimage>
-            <div class=mask></div><img class=bitmap src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap@2x.png> </div> <div class=nameandartist>
-            <div class=novemberrain>November Rain</div>
-            <div class=gunsnroses>Guns n Roses</div>
-          </div>
-          <div class=button>
-            <div class=buttonbg></div>
-            <div class=get>GET</div>
-          </div>
-        </div>
-        <div class=a2>
-          <div class=trackimage>
-            <div class=mask></div><img class=bitmap src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap-1@2x.png> </div> <div class=nameandartist>
-            <div class=chopsuey>Chop Suey</div>
-            <div class=systemofadown>System of a down</div>
-          </div>
-          <div class=button>
-            <div class=buttonbg></div>
-            <div class=get>GET</div>
-          </div>
-        </div>
-        <div class=a3>
-          <div class=trackimage>
-            <div class=mask></div><img class=bitmap src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap-2@2x.png> </div> <div class=nameandartist>
-            <div class=thetroopers>The Troopers</div>
-            <div class=ironmaiden>Iron Maiden</div>
-          </div>
-          <div class=button>
-            <div class=buttonbg></div>
-            <div class=get>GET</div>
-          </div>
-        </div>
-      </div>
-      <div class=topoftheweekcopy>
-        <div class=toptitle>
-          <div class=button>
-            <div class=seeall>SEE ALL</div>
-          </div>
-          <div class=subtitle>
-            <div class=alltimehits>All time hits</div>
-          </div>
-          <div class=divider><img class=line4 src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb726d4c5322c000a357f28/img/all-tracks-line-4-copy-5.png> </div> </div> <div class=a1>
-            <div class=trackimage>
-              <div class=mask></div><img class=bitmap src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap-3@2x.png> </div> <div class=nameandartist>
-              <div class=heavenu2019sdoor>Heaven’s Door</div>
-              <div class=gunsnroses>Guns n Roses</div>
-            </div>
-            <div class=button>
-              <div class=rectangle3></div>
-              <div class=get>GET</div>
-            </div>
-          </div>
-          <div class=a2>
-            <div class=image></div>
-            <div class=nameandartist>
-              <div class=chopsuey>Chop Suey</div>
-              <div class=systemofadown>System of a down</div>
-            </div>
-            <div class=button>
-              <div class=rectangle3></div>
-              <div class=get>GET</div>
-            </div>
-          </div>
-          <div class=a3>
-            <div class=image></div>
-            <div class=nameandartist>
-              <div class=thetroopers>The Troopers</div>
-              <div class=ironmaiden>Iron Maiden</div>
-            </div>
-            <div class=button>
-              <div class=rectangle3></div>
-              <div class=get>GET</div>
-            </div>
-          </div>
-        </div>
-        <div class=search>
-          <div class=rectangle></div>
-          <img class=shape src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-shape@2x.png>
-          <div class=searchinstore>
-            Search in store
-          </div>
-        </div>
-    </div> -->
   <footer class="footer">
     <a class="anchor" onclick="footerGoTo('/topHits', 'Top Hits')">
       <div class="icon">
