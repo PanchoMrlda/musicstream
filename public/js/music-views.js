@@ -1,4 +1,6 @@
 var audio = new Audio();
+var trackList = [];
+var trackNumber = 0;
 
 /**
  * METHODS
@@ -31,17 +33,19 @@ function setPlayPauseButton() {
   }
 }
 
-function playAudio(element) {
+function initAudio(element) {
+  trackList = Array.prototype.slice.call(document.getElementsByClassName("song-container"));
+  trackNumber = trackList.indexOf(element);
   audio.pause();
   audio.src = element.getAttribute("src");
   audio.song = element.getAttribute("data-song");
   audio.artist = element.getAttribute("data-artist");
-  try {
-    setAudioInfo(audio.song, audio.artist);
-    setPlayPauseButton();
-  } catch (error) {
-    console.log(error);
-  }
+  setPlayPauseButton();
+  playAudio();
+}
+
+function playAudio() {
+  setAudioInfo(audio.song, audio.artist);
   audio.play();
 }
 
@@ -78,6 +82,19 @@ function footerGoTo(url, title) {
   }
 }
 
+function nextTrack() {
+  var element;
+  trackNumber++;
+  if (trackNumber >= trackList.length) {
+    trackNumber = 0;
+  }
+  element = trackList[trackNumber];
+  audio.src = element.getAttribute("src");
+  audio.song = element.getAttribute("data-song");
+  audio.artist = element.getAttribute("data-artist");
+  playAudio();
+}
+
 /**
  * EVENTS
  */
@@ -95,7 +112,15 @@ function initEvents() {
   
   audio.addEventListener("play", function () {
     setPlayPauseButton();
-  });  
+  });
+
+  audio.addEventListener("ended", function () {
+    nextTrack();
+  });
+
+  document.getElementsByClassName('icon-menu')[0].addEventListener("click", function () {
+    
+  });
 }
 
 initEvents();
