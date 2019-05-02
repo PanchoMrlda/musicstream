@@ -378,6 +378,7 @@
   font-size: 19.0px;
   color: rgba(51, 51, 51, 1.0);
   text-align: left;
+  padding: 5px 0;
 }
 
 .main .content .top-of-the-week .track .song-info .song-artist {
@@ -385,6 +386,7 @@
   font-size: 14.0px;
   color: rgba(51, 51, 51, 1.0);
   text-align: left;
+  padding: 5px 0;
 }
 
 .main .content .top-of-the-week .track .track-button {
