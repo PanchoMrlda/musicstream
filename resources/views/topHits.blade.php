@@ -54,9 +54,8 @@
             <img class="song-image" src=https://anima-uploads.s3.amazonaws.com/projects/5c63fb77bc2e39000dda1cf8/releases/5cb78715c5322c000d852688/img/top-hit-bitmap@2x.png>
           </div>
           <div class="song-info">
-            <span class="song-name">November Rain</span>
-            <br>
-            <span class="song-artist">Guns n Roses</span>
+            <p class="song-name">November Rain</p>
+            <p class="song-artist">Guns n Roses</p>
           </div>
           <div class="track-button">
             GET
