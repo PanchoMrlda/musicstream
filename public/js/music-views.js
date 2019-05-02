@@ -6,7 +6,7 @@ var trackNumber = 0;
  * METHODS
  */
 function setFooterIcon(title) {
-  var icons = document.getElementsByClassName("anchor");
+  var icons = document.querySelectorAll(".anchor");
   var targetIcon = Array.prototype.find.call(icons, function (element) {
     return element.innerHTML.includes(title);
   });
@@ -17,13 +17,13 @@ function setFooterIcon(title) {
 function setAudioInfo(song, artist) {
   song = song || "Not playing";
   artist = artist || "Not playing";
-  document.getElementsByClassName("song")[0].innerHTML = song;
-  document.getElementsByClassName("artist")[0].innerHTML = artist;
+  document.querySelector(".song").innerHTML = song;
+  document.querySelector(".artist").innerHTML = artist;
 }
 
 function setPlayPauseButton() {
-  var playButton = document.getElementsByClassName("far play")[0];
-  var pauseButton = document.getElementsByClassName("far pause")[0];
+  var playButton = document.querySelector(".far.play");
+  var pauseButton = document.querySelector(".far.pause");
   if (!audio.paused && audio.src) {
     playButton.style.display = "none";
     pauseButton.style.display = "block";
@@ -34,7 +34,7 @@ function setPlayPauseButton() {
 }
 
 function initAudio(element) {
-  trackList = Array.prototype.slice.call(document.getElementsByClassName("song-container"));
+  trackList = Array.prototype.slice.call(document.querySelectorAll(".song-container"));
   trackNumber = trackList.indexOf(element);
   audio.pause();
   audio.src = element.getAttribute("src");
@@ -69,7 +69,7 @@ function footerGoTo(url, title) {
         indexTagBegin = response.indexOf("<" + tag);
         indexTagEnd = response.indexOf("</" + tag);
         response = response.substring(indexTagBegin, indexTagEnd);
-        document.getElementsByTagName(tag)[0].innerHTML = response;
+        document.querySelector(tag).innerHTML = response;
         setPlayPauseButton();
         setAudioInfo(audio.song, audio.artist);
         initEvents();
@@ -105,7 +105,7 @@ function getSong() {
 
 function updatePlays() {
   var xmlHttp;
-  var CSRF_TOKEN = document.getElementsByName("csrf-token")[0].getAttribute('content');
+  var CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').getAttribute("content");
   var song = getSong();
   var plays = song.plays + 1;
   xmlHttp = new XMLHttpRequest();
@@ -118,7 +118,7 @@ function updatePlays() {
  * EVENTS
  */
 function initEvents() {
-  Array.prototype.map.call(document.getElementsByClassName("far"), function (element) {
+  Array.prototype.map.call(document.querySelectorAll(".far"), function (element) {
     element.addEventListener("click", function () {
       if (audio.paused && audio.src) {
         audio.play();
@@ -138,7 +138,7 @@ function initEvents() {
     nextTrack();
   });
 
-  document.getElementsByClassName('icon-menu')[0].addEventListener("click", function () {
+  document.querySelector(".icon-menu").addEventListener("click", function () {
     
   });
 }
