@@ -89,6 +89,16 @@ function nextTrack() {
   if (trackNumber >= trackList.length) {
     trackNumber = 0;
   }
+  // listLength = trackList.length;
+  // if (document.querySelector(".shuffle").className.includes("active")) {
+  //   trackNumber = Math.floor(Math.random(0, listLength) * (listLength - 0)) + 0;
+  // } else {
+  //   if (trackNumber >= listLength) {
+  //     trackNumber = 0;
+  //   } else {
+  //     trackNumber++;
+  //   }
+  // }
   element = trackList[trackNumber];
   audio.src = element.getAttribute("src");
   audio.song = element.getAttribute("data-song");
