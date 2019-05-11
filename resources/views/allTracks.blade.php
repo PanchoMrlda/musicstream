@@ -8,7 +8,7 @@
   <title>All Tracks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="css/fonts/fontawesome/all.css" rel="stylesheet">
   <script src="js/music-views.js" defer="true"></script>
   <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
@@ -28,6 +28,7 @@
     </figure>
   </header>
   <main class="main">
+    @include('layouts.playing')
     <section class="content">
       <div class="playing">
         <div class="info">
