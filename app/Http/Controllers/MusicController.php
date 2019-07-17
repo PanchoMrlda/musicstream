@@ -12,7 +12,6 @@ class MusicController extends Controller
     $songs = Song::all();
 
     return view('allTracks')->with('songs', $songs);
-    return view('music')->with('songs', $songs);
   }
 
   public function allTracks()
