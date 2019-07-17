@@ -29,17 +29,7 @@
   </header>
   <main class="main">
     <section class="content">
-      <div class="playing">
-        <div class="info">
-          <span class="song">Not Playing</span>
-          <br>
-          <span class="artist">Not Playing</span>
-        </div>
-        <div class="button">        
-          <span class="far play">&#xf144;</span>
-          <span class="far pause" style="display:none">&#xf28b;</span>
-        </div>
-      </div>
+      @include('layouts.playing')
       <div class="search">
         <img class="header-search-icon" src="images/search.png">
         <input class="search-in-store" type="text" placeholder="Search in Store">

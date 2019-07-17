@@ -28,35 +28,11 @@
     </figure>
   </header>
   <main class="main">
-    @include('layouts.playing')
     <section class="content">
-      <div class="playing">
-        <div class="info">
-          <span class="song">Not Playing</span>
-          <br>
-          <span class="artist">Not Playing</span>
-        </div>
-        <div class="button">        
-          <span class="far play">&#xf144;</span>
-          <span class="far pause" style="display:none">&#xf28b;</span>
-        </div>
-      </div>
-      <div class="songs">
-        @if(count($songs)> 0)
-        @foreach($songs as $song)
-        <div class="song-container" onclick="initAudio(this)" src="{{$song->getAudioUrl()}}" data-song="{{$song->name}}" data-artist="{{$song->artist->name}}" data-id="{{$song->id}}">
-          <div>
-            <p class="name">{{$song->name}}</p>
-            <p class="artist">{{$song->artist->name}}</p>
-          </div>
-          <p class="song-duration">{{$song->durationToString()}}</p>
-        </div>
-        @endforeach
-        @endif
-      </div>
+      @include('layouts.playing')
+      @include('layouts.songs')
     </section>
   </main>
   @include('layouts.footer')
 </body>
-
 </html>
