@@ -1,22 +1,20 @@
-@extends('layouts.app')
+<html>
 
-@section('content')
-  <h1>Contact</h1>
-  {!! Form::open(['url' => 'contact/submit']) !!}
-    <div class="from-group">
-      {{Form::label('name', 'Name')}}
-      {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter name'])}}
-    </div>
-    <div class="from-group">
-      {{Form::label('email', 'E-Mail Address')}}
-      {{Form::email('email',  '', ['class' => 'form-control', 'placeholder' => 'Enter email'])}}
-    </div>
-    <div class="from-group">
-      {{Form::label('message', 'Message')}}
-      {{Form::textarea('message',  '', ['class' => 'form-control', 'placeholder' => 'Enter message'])}}
-    </div>
-    <div>
-      {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-    </div>
-  {!! Form::close() !!}
-@endsection
+<head>
+  <link rel="shortcut icon" type=image/png href="images/favicon.png">
+  <meta name=author content="Musically by Pancho">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/music-views.css">
+  <link href="css/fonts/fontawesome/all.css" rel="stylesheet">
+  <script src="js/music-views.js" defer="true"></script>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
+<body class="body">
+  @include('layouts.header')
+  @include('layouts.footerBasic')
+</body>
+</html>
