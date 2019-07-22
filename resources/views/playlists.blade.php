@@ -14,19 +14,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="icon-menu-container">
-      <img class="icon-menu" src=images/icon-menu.png>
-    </div>
-    <div class="title-container">
-      <div class="title">
-        <span>Playlist</span>
-      </div>
-    </div>
-    <figure class="profile-image-container">
-      <img class="profile-image" src=images/pancho.jpg>
-    </figure>
-  </header>
+  @include('layouts.header')
   <main class="main">
     <nav class="main-nav">
       <div class="main-nav__item-add">
