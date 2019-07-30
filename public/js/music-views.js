@@ -12,11 +12,13 @@ function setFooterIcon(title) {
   var targetIcon = Array.prototype.find.call(icons, function (element) {
     return element.innerHTML.includes(title);
   });
-  targetIcon.style.opacity = 1;
-  imgElement = targetIcon.children[0].children[0];
-  imgSrc = imgElement.src.split(".png")[0];
-  imgElement.src = imgSrc + "-white.png";
-  targetIcon.children[1].style.color = "white";
+  if (targetIcon) {
+    targetIcon.style.opacity = 1;
+    imgElement = targetIcon.children[0].children[0];
+    imgSrc = imgElement.src.split(".png")[0];
+    imgElement.src = imgSrc + "-white.png";
+    targetIcon.children[1].style.color = "white";
+  }
 }
 
 function setAudioInfo(song, artist) {
