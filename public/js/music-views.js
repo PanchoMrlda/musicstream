@@ -20,8 +20,8 @@ function setFooterIcon(title) {
 }
 
 function setAudioInfo(song, artist) {
-  song = song || "Not playing";
-  artist = artist || "Not playing";
+  song = song || "Not Playing";
+  artist = artist || "Not Playing";
   document.querySelector(".song").innerHTML = song;
   document.querySelector(".artist").innerHTML = artist;
 }
