@@ -128,7 +128,22 @@ function updatePlays() {
   xmlHttp = new XMLHttpRequest();
   xmlHttp.open("PUT", "/songs/" + audio.id, true);
   xmlHttp.setRequestHeader("Content-type", "application/json");
-  xmlHttp.send(JSON.stringify({_token: CSRF_TOKEN, plays: plays}));
+  xmlHttp.send(JSON.stringify({
+    _token: CSRF_TOKEN,
+    plays: plays
+  }));
+}
+
+function sendMessageToSlack(text) {
+  var xmlHttp;
+  var CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').getAttribute("content");
+  xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("POST", "/messages", true);
+  xmlHttp.setRequestHeader("Content-type", "application/json");
+  xmlHttp.send(JSON.stringify({
+    _token: CSRF_TOKEN,
+    text: text
+  }));
 }
 
 /**
