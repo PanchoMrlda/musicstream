@@ -70,3 +70,5 @@ Route::get('/topHits', 'MusicController@topHits');
 Route::resource('artists', 'ArtistsController');
 Route::resource('albums', 'AlbumsController');
 Route::resource('songs', 'SongsController');
+Route::resource('audio', 'AudioController');
+Route::resource('messages', 'MessagesController');
