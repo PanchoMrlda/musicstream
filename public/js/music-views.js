@@ -5,6 +5,11 @@ var trackNumber = 0;
 /**
  * METHODS
  */
+function setHeader(title) {
+  var span = document.querySelector(".header .title-container .title span");
+  span.innerHTML = title;
+}
+
 function setFooterIcon(title) {
   var imgSrc;
   var imgElement;
@@ -80,6 +85,7 @@ function footerGoTo(url, title) {
         setPlayPauseButton();
         setAudioInfo(audio.song, audio.artist);
         initEvents();
+        setHeader(title);
         setFooterIcon(title);
       }
     };
@@ -176,4 +182,5 @@ function initEvents() {
 }
 
 initEvents();
+setHeader(document.title);
 setFooterIcon(document.title);
